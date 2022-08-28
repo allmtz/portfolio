@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
     
     
 </head>
 <body>
     
-    <div class="slide1 slide">
+    <div id="home" class="slide1 slide">
         <div class="container">
             <nav class="row">
                 <p>AM</p>
@@ -29,11 +31,11 @@
 
                     </li>
                     <li> 
-                        <a href="#Skills">Skills</a>
+                        <a href="#skills">Skills</a>
 
                     </li>
                     <li> 
-                        <a href="#work">Work</a>
+                        <a href="#projects">Projects</a>
 
                     </li>
                     <li> 
@@ -51,23 +53,113 @@
                     <span class="name">Allan Martinez</span> 
                 </h1> 
                 <p>I am a <span class="self-taught">self-taught</span> web-developer based in Napa, CA.<br> Currently,
-                    I'm working on creating custom web 
+                    I'm working on creating interactive web 
                     applications with React.
                 </p> 
-                <button>My Projects</button>   
+                <button><a href="#projects">My Projects</a> </button>
+                  
 
             </header>
         </div> 
     </div>
-    <div class="slide2 slide">slide 2</div>
-    <div class="slide3 slide">slide 3</div>
-    <div class="slide4 slide">slide 4</div>
+
+    <div id="about" class="slide2 slide">
+    
+       <div class="container about-container">
+        <h1>About</h1>
+        <p>I am a fast learning, motivated, self taught developer
+            focused on using modern tools to build fast, responsive and
+            custom web applications.
+        </p>
+
+       </div>
+    
+    </div>
+
+    <div id="skills" class="skills slide3 slide">
+    
+        <div class="container ">
+            <h1 class="underline">Skills</h1>
+            <p>Technologies I've used</p>
+            <div class="row skills-container">
+                <div class="skill-card">
+                    <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                    <p>HTML</p>
+
+                </div>
+                <div class="skill-card">
+                    <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
+                    <P>JavaScript</P>
+                    
+                </div>
+                <div class="skill-card">
+                    <img src="/skills-icons/react-svgrepo-com.svg" alt="React icon">
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <!-- <img class='git' src="/skills-icons/github-svgrepo-com (1).svg" alt="GitHub icon"> -->
+                    <iconify-icon icon="codicon:github-inverted" style="color: white;" width="80" height="80"></iconify-icon>
+                    <p>GitHub</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    
+    
+    </div>
+    <div id="projects" class="slide4 slide">
+        <div class="container">
+            <h1 class="underline">Projects</h1>
+            <p>What I've been up to</p>
+            <div class="work-container row"> 
+                <div class="work-card">
+                    <p>project goes here</p>
+                </div>
+                <div class="work-card">
+                    <p>project goes here</p>
+                </div>
+                <div class="work-card">
+                    <p>project goes here</p>
+                </div>
+                <div class="work-card">
+                    <p>project goes here</p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <div id="contact" class="slide5 slide">
+        <h1>Contact</h1>
+        <p class="send-msg">Send me a message</p>
+        <div class="container column contact-form">
+            
+            <form action="">
+                <p>Name</p>
+                <input type="text" name="" id="">
+                <p>Email</p>
+                <input type="text" name="" id="" required>
+                <p>Message</p>
+                <input class="message-box" type="text" name="" id="" required>
+                <button class="contact" type="submit">Contact</button>
+                
+            </form>
+
+        </div>
+    </div>
 
 
 
 
 <script>
-
 
 
 
