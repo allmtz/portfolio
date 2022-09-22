@@ -1,9 +1,10 @@
 
-    /* color: #8892b0; */
+    /* GRAY TEXT color: #8892b0; */
 
 :root{
     --header-font-size: 3rem;
     --accent-color: #3eb99f;
+    --bg-color: #0a192f
 
 }
 
@@ -15,7 +16,7 @@ body{
     min-height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #0a192f;
+    background-color: var(--bg-color);
     color: whitesmoke;
 
 }
@@ -23,6 +24,7 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 
 }
 
@@ -63,7 +65,7 @@ nav a:hover::after {
 }
 .container{
     align-self: flex-start;
-    margin-left: 25vw;
+    margin-left: 20vw;
     
     
     /* border: 2px solid red; */
@@ -116,11 +118,11 @@ header{
 
 .name{
     font-size: 5.5rem;
-    /* color: #3eb99f; */
     background-image: linear-gradient(#20bf55, #01baef);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
+    /* letter-spacing: .1rem */
 }
 
 .self-taught{
@@ -193,6 +195,7 @@ header button:hover{
 .skills-container{
     gap: 4rem;
     text-align: center;
+    flex-wrap: wrap;
 
 }
 
@@ -215,16 +218,26 @@ header button:hover{
 
 /* work */
 
-.work-container{
+.project-container{
     gap: 3rem;
     text-align: start;
+
+
+    /* TODO fix project container */
+
+    /* flex-wrap: wrap;
+    border: 2px solid red; */
     
 }
 
-.work-card{
+.project-card{
     padding: 2rem 1rem;
     box-shadow: 0 5px 5px 1px black;
     border: 1px solid black;
+}
+
+.project-card p{
+    max-width: 15rem;
 }
 
 /* contact */
@@ -273,3 +286,87 @@ form button:hover{
     font-size: var(--header-font-size);
     border-bottom: 2px solid var(--accent-color);
 }
+
+/* oragnize later */
+
+.project-display{
+    height: 16rem;
+    background-image: url('/project-images/img1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-tracker{
+    background-image: url('/project-images/task-tracker.png');
+}
+
+.movie-app{
+    background-image: url('/project-images/movie-app.png');
+}
+
+.barber-site{
+    background-image: url('/project-images/barber-site.png');
+}
+
+.login-card{
+    background-image: url('/project-images/login-card.png');
+}
+
+.responsive-site{
+    background-image: url('/project-images/responsive-site.png');
+}
+
+.project-links{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#20bf556c, #01bbef9c);
+
+}
+
+.project-links:hover{
+    display: flex;
+}
+
+.project-links a:hover{
+    scale: 1.1;
+}
+
+
+
+.demo-link{
+    background-color: var(--bg-color);
+    padding: 1rem .75rem;
+    border-radius: 10px;
+}
+
+.name-container span{
+    position: relative;
+    display: inline-block;   
+    animation-name: jump; 
+    animation-duration: 1s;
+
+
+    /* animation-iteration-count: infinite; */
+ }
+
+@keyframes jump {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+} 
+

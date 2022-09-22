@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,8 +49,23 @@
                 <p>
                     <span class="hello">Hello, my name is</span>  
                 </p>
-                <h1> 
-                    <span class="name">Allan Martinez</span> 
+                <h1 class="name-container"> 
+                    <!-- <span class="name">Allan Martinez</span>  -->
+                    <span class="name">A</span> 
+                    <span class="name">l</span> 
+                    <span class="name">l</span> 
+                    <span class="name">a</span> 
+                    <span class="name">n&nbsp</span> 
+                    <span class="name">M</span> 
+                    <span class="name">a</span> 
+                    <span class="name">r</span> 
+                    <span class="name">t</span> 
+                    <span class="name">i</span> 
+                    <span class="name">n</span> 
+                    <span class="name">e</span> 
+                    <span class="name">z</span> 
+
+
                 </h1> 
                 <p>I am a <span class="self-taught">self-taught</span> web-developer based in Napa, CA.<br> Currently,
                     I'm working on creating interactive web 
@@ -101,7 +116,10 @@
                     <p>React</p>
                 </div>
                 <div class="skill-card">
-                    <!-- <img class='git' src="/skills-icons/github-svgrepo-com (1).svg" alt="GitHub icon"> -->
+                    <img src="/skills-icons/firebase-svgrepo-com.svg" alt="Firebase icon">
+                    <p>Firebase</p>
+                </div>
+                <div class="skill-card">
                     <iconify-icon icon="codicon:github-inverted" style="color: white;" width="80" height="80"></iconify-icon>
                     <p>GitHub</p>
                 </div>
@@ -117,22 +135,162 @@
     </div>
     <div id="projects" class="slide4 slide">
         <div class="container">
-            <h1 class="underline">Projects</h1>
+            <h1 class="underline">Projects</h1>   
             <p>What I've been up to</p>
-            <div class="work-container row"> 
-                <div class="work-card">
-                    <p>project goes here</p>
+            <div class="project-container row"> 
+
+                <div class="project-card">
+                    <div class="project-display task-tracker">
+                        <div class="project-links">
+                            <a 
+                                href="https://github.com/ramenDiet/task-tracker"
+                                target="_blank">                    
+                                 <iconify-icon icon="codicon:github-inverted" style="color: black;" width="50" height="50"></iconify-icon>
+                            </a>
+                            <a class="demo-link" 
+                            href="https://task-tracker-9966c.web.app/"
+                            target="_blank">Demo</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <p class="project-desc">
+                        This is a kanban style task tracking app that uses local storage to 
+                        remember user input 
+                    </p>
+                    <div class="project-tech-used">
+                    <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                    <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                    <img src="/skills-icons/react-svgrepo-com.svg" alt="React icon">
+                    
+
+                    </div>
                 </div>
-                <div class="work-card">
-                    <p>project goes here</p>
+
+                <div class="project-card">
+                    <div class="project-display movie-app">
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/ramenDiet/10-more-JS-projects/tree/master/movies"    
+                                target="_blank"
+                            >                    
+                                 <iconify-icon icon="codicon:github-inverted" style="color: black;" width="50" height="50"></iconify-icon>
+                            </a>
+                            <a 
+                                class="demo-link" 
+                                href="https://movie-app-539e7.web.app/"
+                                target="_blank"
+                                >Demo</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <p class="project-desc">
+                        Uses the MovieDB API to display movies along with their descriptions, ratings and a trailer 
+                    </p>
+                    <div class="project-tech-used">
+                        <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                        <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                        <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
+                    </div>
+
+                    
+
                 </div>
-                <div class="work-card">
-                    <p>project goes here</p>
+
+                <div class="project-card">
+                    <div class="project-display barber-site">
+                        <div class="project-links">
+                            <a 
+                            href="https://github.com/ramenDiet/random-projects/tree/main/barber-site"
+                            target="_blank">                    
+                                 <iconify-icon icon="codicon:github-inverted" style="color: black;" width="50" height="50"></iconify-icon>
+                            </a>
+                            <a 
+                            class="demo-link" 
+                            href="https://chinoblends.com/"
+                            target="_blank"
+                            >Demo</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <p class="project-desc">
+                        A responsive barber site with an image carousel, sticky navigation and mobile hamburger
+                    </p>
+                    <div class="project-tech-used">
+                        <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                        <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                        <img src="/skills-icons/react-svgrepo-com.svg" alt="React icon">
+                    </div>
                 </div>
-                <div class="work-card">
-                    <p>project goes here</p>
+
+                <div class="project-card">
+                    <div class="project-display login-card">
+                        <div class="project-links">
+                            <a 
+                            href="https://github.com/ramenDiet/random-projects/tree/main/login-card"
+                            target="_blank">                    
+                                 <iconify-icon icon="codicon:github-inverted" style="color: black;" width="50" height="50"></iconify-icon>
+                            </a>
+                            <a 
+                            class="demo-link" 
+                            href="https://login-card-ba8c3.web.app/ "
+                            target="_blank"
+                            >Demo</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <p class="project-desc">
+                        A sample login card with dark mode toggle
+                    </p>
+                    <div class="project-tech-used">
+                        <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                        <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                        <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
+
+                    </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-display responsive-site">
+                        <div class="project-links">
+                            <a 
+                            href="https://github.com/ramenDiet/Responsive-Layout-Challenge"
+                            target="_blank">                    
+                                 <iconify-icon icon="codicon:github-inverted" style="color: black;" width="50" height="50"></iconify-icon>
+                            </a>
+                            <a 
+                            class="demo-link" 
+                            href="https://responsive-layouts.web.app/"
+                            target="_blank"
+                            >Demo</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <p class="project-desc">
+                        A fully responsive example website layout
+                    </p>
+                    <div class="project-tech-used">
+                        <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
+                        <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
+                        <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
+
+                    </div>
+                </div>
+           
+           
+           
+           
+           
+           
             </div>
+
+
+            <!-- responsive : https://responsive-layouts.web.app/ -->
+            <!-- login : https://login-card-ba8c3.web.app/ -->
     </div>
     </div>
 
