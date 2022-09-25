@@ -2,12 +2,12 @@
     /* GRAY TEXT color: #8892b0; */
 
     /* TODO */
-    /* fix name break  */
-    /* finish mobile design */
     /* figure out what to do with the contact form submisson */
-    /* fix about section cutting off  */
 
     /* DONE */
+    /* finish mobile design */
+    /* fix name break  */
+    /* fix about section cutting off  */
     /* implement close button for mobile nav */
     /* look at changing project display at 568px width */
 
@@ -18,6 +18,10 @@
     --accent-color: #3eb99f;
     --bg-color: #0a192f
 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -62,7 +66,9 @@ nav a:hover::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    padding: 1rem;
+
+    /* border: 2px solid orange; */
 
 
 
@@ -80,7 +86,8 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
+    min-width: 320px;
+
     /* border: 2px solid red; */
 }
 
@@ -179,10 +186,9 @@ header button:hover{
 
 .about-container{
     display: flex;
-    /* border: 2px solid orange; */
     align-items: center;
-    gap: 2rem;
-    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
 
 }
 
@@ -210,6 +216,7 @@ header button:hover{
     gap: 4rem;
     text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -257,7 +264,7 @@ header button:hover{
     margin-right: auto;
     width: 100%;
     max-width: 500px;
-
+    
     /* border: 2px solid red; */
 }
 
@@ -365,6 +372,10 @@ form button:hover{
     border-radius: 10px;
 }
 
+.name-container{
+    min-width: 310px;
+}
+
 .name-container span{
     position: relative;
     display: inline-block;   
@@ -442,4 +453,26 @@ form button:hover{
     .name-break{
         display: none;
     }    
+}
+
+@media (max-width:435px) {
+    .name{
+        font-size: 4rem;
+    }
+
+    .about-container{
+        max-width: 100%;
+       
+    }
+
+    .about-container h1{
+        font-size: 2rem;
+    
+    }  
+}
+
+@media(min-width:300px){
+    header{
+        margin-top: 4rem;
+    }
 }
