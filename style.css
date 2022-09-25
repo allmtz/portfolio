@@ -2,13 +2,15 @@
     /* GRAY TEXT color: #8892b0; */
 
     /* TODO */
-
-    /* look at changing project display at 568px width */
+    /* fix name break  */
     /* finish mobile design */
     /* figure out what to do with the contact form submisson */
+    /* fix about section cutting off  */
 
     /* DONE */
     /* implement close button for mobile nav */
+    /* look at changing project display at 568px width */
+
 
 
     :root{
@@ -233,6 +235,7 @@ header button:hover{
     gap: 3rem;
     text-align: start;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -251,10 +254,13 @@ header button:hover{
 .contact-form{
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+
+    /* border: 2px solid red; */
 }
 
 .contact-form input{
-    width: 500px;
     height: 2rem;
     outline: none;
 }
@@ -435,4 +441,11 @@ form button:hover{
     nav .anchors{
         display: flex ; 
     }
+}
+
+/* breaks the name so it isn't cutofff at a random letter  */
+@media (min-width:665px) {
+    .name-break{
+        display: none;
+    }    
 }
