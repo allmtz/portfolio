@@ -1,7 +1,7 @@
 const projectCards = document.querySelectorAll('.project-card')
 const projectLinks = document.querySelectorAll('.project-links')
-const nameContainer = document.querySelector(".name-container")
-const spans = nameContainer.querySelectorAll('span')
+const nameSpans = document.querySelectorAll('.name-container span')
+const navDropdown = document.querySelector('nav ul')
 
 projectCards.forEach(ele => ele.addEventListener('mouseenter',(e) => displayLinks(e)) )
 projectCards.forEach(ele => ele.addEventListener('mouseleave', hideLinks ))
@@ -19,11 +19,18 @@ function hideLinks(){
 
 function wave(){
     let i = 0
-    spans.forEach(span => {
+    nameSpans.forEach(span => {
         span.style.animationDelay = `${.07 * i}s`
         i++
     })
 
 }
 
+function closeNav(){
+    navDropdown.classList.toggle('hidden-nav')
+}
+
+function openNav(){
+    navDropdown.classList.toggle('hidden-nav')
+}
 wave()

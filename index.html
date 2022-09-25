@@ -16,11 +16,19 @@
     
 </head>
 <body>
-    
+
+    <div class="container">
     <div id="home" class="slide1 slide">
-        <div class="container">
-            <nav class="row">
-                <p>AM</p>
+       <nav class="row ">                
+                <a 
+                    
+                    href="https://github.com/ramenDiet"
+                    target="_blank">                    
+                        <iconify-icon icon="codicon:github-inverted" style="color: white;" width="50" height="50"></iconify-icon>
+                </a>
+
+                <button class="open-nav-btn" onclick="openNav()">☰</button>
+
                 <ul class="anchors row">
                     <li> 
                         <a href="#home">Home</a>
@@ -41,7 +49,10 @@
                     <li> 
                         <a href="#contact">Contact</a>
 
-                    </li>           
+                    </li>
+                    <li>
+                        <button onclick="closeNav()" class="close-nav-btn">X</button>
+                    </li>
                 </ul>
             </nav>
 
@@ -75,12 +86,11 @@
                   
 
             </header>
-        </div> 
     </div>
 
     <div id="about" class="slide2 slide">
     
-       <div class="container about-container">
+        <div class="about-container">
         <h1>About</h1>
         <p>I am a fast learning, motivated, self taught developer
             focused on using modern tools to build fast, responsive and
@@ -93,7 +103,6 @@
 
     <div id="skills" class="skills slide3 slide">
     
-        <div class="container ">
             <h1 class="underline">Skills</h1>
             <p>Technologies I've used</p>
             <div class="row skills-container">
@@ -129,12 +138,10 @@
 
 
 
-        </div>
     
     
     </div>
     <div id="projects" class="slide4 slide">
-        <div class="container">
             <h1 class="underline">Projects</h1>   
             <p>What I've been up to</p>
             <div class="project-container row"> 
@@ -289,16 +296,13 @@
             </div>
 
 
-            <!-- responsive : https://responsive-layouts.web.app/ -->
-            <!-- login : https://login-card-ba8c3.web.app/ -->
-    </div>
     </div>
 
 
     <div id="contact" class="slide5 slide">
         <h1>Contact</h1>
         <p class="send-msg">Send me a message</p>
-        <div class="container column contact-form">
+        <div class="column contact-form">
             
             <form action="">
                 <p>Name</p>
@@ -306,7 +310,7 @@
                 <p>Email</p>
                 <input type="text" name="" id="" required>
                 <p>Message</p>
-                <input class="message-box" type="text" name="" id="" required>
+                <textarea class="message-box" cols="30" rows="10"></textarea>
                 <button class="contact" type="submit">Contact</button>
                 
             </form>
@@ -314,8 +318,7 @@
         </div>
     </div>
 
-
-
+</div>
 
 <script>
 
