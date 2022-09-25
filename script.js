@@ -6,6 +6,11 @@ const navDropdown = document.querySelector('nav ul')
 projectCards.forEach(ele => ele.addEventListener('mouseenter',(e) => displayLinks(e)) )
 projectCards.forEach(ele => ele.addEventListener('mouseleave', hideLinks ))
 
+// resets/closes the mobile dropdown everytime the window is resized past the breakpoint 
+window.addEventListener('resize', (e) => {
+    e.target.innerWidth > 755 ? navDropdown.classList.remove('show-nav') : null
+})
+
 function displayLinks(e){   
     e.target.querySelector('.project-links').style.display = 'flex'
 
@@ -27,10 +32,10 @@ function wave(){
 }
 
 function closeNav(){
-    navDropdown.classList.toggle('hidden-nav')
+    navDropdown.classList.toggle('show-nav')
 }
 
 function openNav(){
-    navDropdown.classList.toggle('hidden-nav')
+    navDropdown.classList.toggle('show-nav')
 }
 wave()

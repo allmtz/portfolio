@@ -62,6 +62,7 @@ nav a:hover::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 
 
 
@@ -388,14 +389,6 @@ form button:hover{
 } 
 
 /* responsive  */
-
-.slide{
-    width: 100%;
-
-    border: 2px solid orange;
-
-}
-
 .close-nav-btn,
 .open-nav-btn{
     color: inherit;
@@ -408,8 +401,8 @@ form button:hover{
 }
 
 /* this gets toggled when the open nav or closed nav is clicked */
-.hidden-nav{        
-    display: none;
+.show-nav{        
+    display: flex !important ;
 }
 
 @media (max-width: 755px) {
@@ -422,6 +415,7 @@ form button:hover{
      .anchors{
         flex-direction: column;
         gap: 1rem;
+        display: none;
     }
 
 
@@ -436,7 +430,7 @@ form button:hover{
     
 }
 
-/* makes sure the dropdown display isn't hidden if you exit mobile after toggling the dropdown */
+/* makes sure the navbar display isn't hidden if you exit mobile after clicking the close nav button */
 @media (min-width:756px){
     nav .anchors{
         display: flex ; 
