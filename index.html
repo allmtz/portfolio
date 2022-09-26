@@ -18,7 +18,7 @@
 <body>
 
     <div class="container">
-    <div id="home" class="slide1 slide">
+    <div id="home" class="slide">
        <nav class="row ">                
                 <a 
                     
@@ -61,7 +61,6 @@
                     <span class="hello">Hello, my name is</span>  
                 </p>
                 <h1 class="name-container"> 
-                    <!-- <span class="name">Allan Martinez</span>  -->
                     <span class="name">A</span> 
                     <span class="name">l</span> 
                     <span class="name">l</span> 
@@ -79,7 +78,7 @@
 
 
                 </h1> 
-                <p>I am a <span class="self-taught">self-taught</span> web-developer based in Napa, CA.<br> Currently,
+                <p>I am a self-taught <span class="accent-color">web developer</span> based in Napa, CA.<br> Currently,
                     I'm working on creating interactive web 
                     applications with React.
                 </p> 
@@ -89,20 +88,20 @@
             </header>
     </div>
 
-    <div id="about" class="slide2 slide">
+    <div id="about" class=" slide">
     
         <div class="about-container">
         <h1>About</h1>
-        <p>I am a fast learning, motivated, self taught developer
-            focused on using modern tools to build fast, responsive and
-            custom web applications.
+        <p>
+            I'm a fast learning frontend developer who loves conquering new challenges.
+            With a focus on constant improvement, I can deliver custom web-applications that stand out.
         </p>
 
        </div>
     
     </div>
 
-    <div id="skills" class="skills slide3 slide">
+    <div id="skills" class="skills  slide">
     
             <h1 class="underline">Skills</h1>
             <p>Technologies I've used</p>
@@ -142,7 +141,7 @@
     
     
     </div>
-    <div id="projects" class="slide4 slide">
+    <div id="projects" class=" slide">
             <h1 class="underline">Projects</h1>   
             <p>What I've been up to</p>
             <div class="project-container row"> 
@@ -166,7 +165,7 @@
                         This is a kanban style task tracking app that uses local storage to 
                         remember user input 
                     </p>
-                    <div class="project-tech-used">
+                    <div>
                     <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
                     <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
                     <img src="/skills-icons/react-svgrepo-com.svg" alt="React icon">
@@ -196,7 +195,7 @@
                     <p class="project-desc">
                         Uses the MovieDB API to display movies along with their descriptions, ratings and a trailer 
                     </p>
-                    <div class="project-tech-used">
+                    <div>
                         <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
                         <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
                         <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
@@ -226,10 +225,11 @@
                     <p class="project-desc">
                         A responsive barber site with an image carousel, sticky navigation and mobile hamburger
                     </p>
-                    <div class="project-tech-used">
+                    <div>
                         <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
                         <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
-                        <img src="/skills-icons/react-svgrepo-com.svg" alt="React icon">
+                        <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
+
                     </div>
                 </div>
 
@@ -251,9 +251,9 @@
                         
                     </div>
                     <p class="project-desc">
-                        A sample login card with dark mode toggle
+                        A sample login card with form input and a dark mode toggle
                     </p>
-                    <div class="project-tech-used">
+                    <div>
                         <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
                         <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
                         <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
@@ -281,7 +281,7 @@
                     <p class="project-desc">
                         A fully responsive example website layout
                     </p>
-                    <div class="project-tech-used">
+                    <div>
                         <img src="/skills-icons/html-svgrepo-com.svg" alt="HTML icon">
                         <img src="/skills-icons/css-svgrepo-com.svg" alt="CSS icon">
                         <img src="/skills-icons/js-official-svgrepo-com.svg" alt="JS icon">
@@ -300,18 +300,19 @@
     </div>
 
 
-    <div id="contact" class="slide5 slide">
-        <h1>Contact</h1>
-        <p class="send-msg">Send me a message</p>
+    <div id="contact" class=" slide">
+        <h1 class="underline">Contact</h1>
+        <p>Send me a message</p>
         <div class="column contact-form">
             
-            <form action="">
+            <form action="https://formspree.io/f/mdojgdjo"
+            method="POST">
                 <p>Name</p>
-                <input type="text" name="" id="">
+                <input type="text" name="name" id="">
                 <p>Email</p>
-                <input type="text" name="" id="" required>
+                <input type="text" name="email" id="" required>
                 <p>Message</p>
-                <textarea class="message-box" cols="30" rows="10"></textarea>
+                <textarea name="message" class="message-box" cols="30" rows="10"></textarea>
                 <button class="contact" type="submit">Contact</button>
                 
             </form>
