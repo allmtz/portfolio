@@ -1,7 +1,7 @@
 
-function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUsed, nanoid } ){
+function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUsed, nanoid, displayLinks, hideLinks } ){
     return(
-        <div className="project-card">
+        <div onMouseEnter={displayLinks} onMouseLeave={hideLinks} className="project-card" >
             <div className={`project-display ${cssSelector}`}>
             <div className="project-links">
                 <a
@@ -28,14 +28,7 @@ function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUse
             <p className="project-desc">
                 {projDesc}
             </p>
-            <div>
-
-            {/* <img src="/skills-icons/html.svg" alt="HTML icon" />
-            <img src="/skills-icons/css.svg" alt="CSS icon" />
-            <img
-                src="/skills-icons/js.svg"
-                alt="JS icon"
-            /> */}
+            <div className='project-skills-container'>
 
             {skillsUsed.map(skill =>
                 

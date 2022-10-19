@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import './App.css';
 import "./style.css";
 
 import { NavBar } from "./componenets/Navbar";
@@ -8,35 +7,31 @@ import { SkillCard } from "./componenets/SkillCard";
 import { ProjectCard } from "./componenets/ProjectCard";
 import { nanoid } from "nanoid";
 import { ContactForm } from "./componenets/ContactForm";
-// todo
-
-const projectCards = document.querySelectorAll(".project-card");
-const projectLinks = document.querySelectorAll(".project-links");
-const nameSpans = document.querySelectorAll(".name-container span");
-// const navDropdown = document.querySelector('nav ul')
-
-projectCards.forEach((ele) =>
-  ele.addEventListener("mouseenter", (e) => displayLinks(e))
-);
-projectCards.forEach((ele) => ele.addEventListener("mouseleave", hideLinks));
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
-// window.addEventListener('resize', (e) => {
-//     e.target.innerWidth > 755 ? navDropdown.classList.remove('show-nav') : null
-// })
+window.addEventListener("resize", (e) => {
+  if (e.target.innerWidth > 755)
+    document.querySelector("nav ul").classList.remove("show-nav");
+
+  return;
+});
 
 function displayLinks(e) {
   e.target.querySelector(".project-links").style.display = "flex";
 }
 
 function hideLinks() {
+  const projectLinks = document.querySelectorAll(".project-links");
   projectLinks.forEach((link) => (link.style.display = "none"));
 }
 
 function wave() {
   let i = 0;
+  const nameSpans = document.querySelectorAll(".name-container span");
+
   nameSpans.forEach((span) => {
     span.style.animationDelay = `${0.07 * i}s`;
+    span.classList.add("jumping-letter");
     i++;
   });
 }
@@ -47,12 +42,10 @@ function App() {
   const navDropdownRef = useRef(null);
 
   function openNav() {
-    // navDropdown.classList.toggle('show-nav')
     navDropdownRef.current.classList.toggle("show-nav");
   }
 
   function closeNav() {
-    // navDropdown.classList.toggle('show-nav')
     navDropdownRef.current.classList.toggle("show-nav");
   }
 
@@ -158,6 +151,8 @@ function App() {
           to remember user input"
             skillsUsed={["HTML", "CSS", "React"]}
             nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -170,6 +165,8 @@ function App() {
             descriptions, ratings and a trailer"
             skillsUsed={["HTML", "CSS", "JS"]}
             nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -181,6 +178,8 @@ function App() {
             projDesc="A sample login card with form input and a dark mode toggle"
             skillsUsed={["HTML", "CSS", "JS"]}
             nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -193,6 +192,8 @@ function App() {
             and mobile hamburger"
             skillsUsed={["HTML", "CSS", "JS"]}
             nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -204,6 +205,8 @@ function App() {
             projDesc="A fully responsive example website layout"
             skillsUsed={["HTML", "CSS", "JS"]}
             nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
           />
         </div>
 
