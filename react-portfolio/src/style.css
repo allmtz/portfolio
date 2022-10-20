@@ -237,7 +237,8 @@ header button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 15rem;
+  gap: .3rem;
+  max-width: 16rem;
 }
 
 .project-display {
@@ -292,6 +293,9 @@ header button:hover {
 
 .responsive-site {
   background-image: url("/src/project-images/responsive-site.png");
+}
+.typeracer {
+  background-image: url("/src/project-images/typeracer.png");
 }
 
 /* contact */

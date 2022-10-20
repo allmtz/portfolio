@@ -102,30 +102,39 @@ function App() {
         <div className="row skills-container">
           <SkillCard
             skillName={"CSS"}
-            imgSrc={"/skills-icons/css-svgrepo-com.svg"}
+            imgSrc={"/static/media/css.72bbde5dd6854ae0b255f45a8e068f35.svg"}
             alt={"CSS icon"}
           />
           <SkillCard
             skillName={"HTML"}
-            imgSrc={"/skills-icons/html-svgrepo-com.svg"}
+            imgSrc={"/static/media/html.4020b5baf8cfa2b70a56e0f29326c4af.svg"}
             alt={"HTML icon"}
           />
           <SkillCard
             skillName={"JavaScript"}
-            imgSrc={"/skills-icons/js-official-svgrepo-com.svg"}
+            imgSrc={"/static/media/js.9ac45f986540a766df551d315cf219d7.svg"}
             alt={"JS icon"}
           />
           <SkillCard
             skillName={"React"}
-            imgSrc={"/skills-icons/react-svgrepo-com.svg"}
+            imgSrc={"/static/media/react.9e733bc6f8cc6085e0425d6c18d02572.svg"}
             alt={"React icon"}
           />
           <SkillCard
             skillName={"Firebase"}
-            imgSrc={"/skills-icons/firebase-svgrepo-com.svg"}
+            imgSrc={"static/media/firebase.5a220cf7ff626941283f787de7891935.svg"}
             alt={"Firebase icon"}
           />
-
+            <SkillCard
+            skillName={"TailwindCSS"}
+            imgSrc={"/static/media/tailwindcss.f7a4a19adb5ca2a37966dc5840e20d2e.svg"}
+            alt={"TailwindCSS icon"}
+          />
+            <SkillCard
+            skillName={"Typescript"}
+            imgSrc={"/static/media/typescript.3cac26dea1892714331a83b2755212de.svg"}
+            alt={"Typescript icon"}
+          />
           <div className="skill-card">
             <iconify-icon
               icon="codicon:github-inverted"
@@ -164,6 +173,17 @@ function App() {
             projDesc="Uses the MovieDB API to display movies along with their
             descriptions, ratings and a trailer"
             skillsUsed={["HTML", "CSS", "JS"]}
+            nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
+          />
+
+          <ProjectCard
+            cssSelector={"typeracer"}
+            githubLink={"https://github.com/ramenDiet/typeracer"}
+            websiteLink={"https://typeracer-fc2b9.web.app/"}
+            projDesc="Typeracer clone built to practice typing speed and accuracy"
+            skillsUsed={["React", "TailwindCSS", "Typescript"]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
