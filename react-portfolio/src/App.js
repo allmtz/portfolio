@@ -122,17 +122,23 @@ function App() {
           />
           <SkillCard
             skillName={"Firebase"}
-            imgSrc={"static/media/firebase.5a220cf7ff626941283f787de7891935.svg"}
+            imgSrc={
+              "static/media/firebase.5a220cf7ff626941283f787de7891935.svg"
+            }
             alt={"Firebase icon"}
           />
-            <SkillCard
+          <SkillCard
             skillName={"TailwindCSS"}
-            imgSrc={"/static/media/tailwindcss.f7a4a19adb5ca2a37966dc5840e20d2e.svg"}
+            imgSrc={
+              "/static/media/tailwindcss.f7a4a19adb5ca2a37966dc5840e20d2e.svg"
+            }
             alt={"TailwindCSS icon"}
           />
-            <SkillCard
+          <SkillCard
             skillName={"Typescript"}
-            imgSrc={"/static/media/typescript.3cac26dea1892714331a83b2755212de.svg"}
+            imgSrc={
+              "/static/media/typescript.3cac26dea1892714331a83b2755212de.svg"
+            }
             alt={"Typescript icon"}
           />
           <div className="skill-card">
