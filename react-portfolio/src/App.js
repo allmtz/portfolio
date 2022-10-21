@@ -8,6 +8,14 @@ import { ProjectCard } from "./componenets/ProjectCard";
 import { nanoid } from "nanoid";
 import { ContactForm } from "./componenets/ContactForm";
 
+import css from './skills-icons/css.svg'
+import firebase from './skills-icons/firebase.svg'
+import html from './skills-icons/html.svg'
+import js from './skills-icons/js.svg'
+import react from './skills-icons/react.svg'
+import tailwindcss from './skills-icons/tailwindcss.svg'
+import typescript from './skills-icons/typescript.svg'
+
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
   if (e.target.innerWidth > 755)
@@ -17,6 +25,7 @@ window.addEventListener("resize", (e) => {
 });
 
 function displayLinks(e) {
+  if(e.target.querySelector(".project-links"))
   e.target.querySelector(".project-links").style.display = "flex";
 }
 
@@ -102,43 +111,38 @@ function App() {
         <div className="row skills-container">
           <SkillCard
             skillName={"CSS"}
-            imgSrc={"/static/media/css.72bbde5dd6854ae0b255f45a8e068f35.svg"}
+            imgSrc={css}
+
             alt={"CSS icon"}
           />
           <SkillCard
             skillName={"HTML"}
-            imgSrc={"/static/media/html.4020b5baf8cfa2b70a56e0f29326c4af.svg"}
+            imgSrc={html}
             alt={"HTML icon"}
           />
           <SkillCard
             skillName={"JavaScript"}
-            imgSrc={"/static/media/js.9ac45f986540a766df551d315cf219d7.svg"}
+            imgSrc={js}
             alt={"JS icon"}
           />
           <SkillCard
             skillName={"React"}
-            imgSrc={"/static/media/react.9e733bc6f8cc6085e0425d6c18d02572.svg"}
+            imgSrc={react}
             alt={"React icon"}
           />
           <SkillCard
             skillName={"Firebase"}
-            imgSrc={
-              "static/media/firebase.5a220cf7ff626941283f787de7891935.svg"
-            }
+            imgSrc={firebase}
             alt={"Firebase icon"}
           />
           <SkillCard
             skillName={"TailwindCSS"}
-            imgSrc={
-              "/static/media/tailwindcss.f7a4a19adb5ca2a37966dc5840e20d2e.svg"
-            }
+            imgSrc={tailwindcss}
             alt={"TailwindCSS icon"}
           />
           <SkillCard
             skillName={"Typescript"}
-            imgSrc={
-              "/static/media/typescript.3cac26dea1892714331a83b2755212de.svg"
-            }
+            imgSrc={typescript}
             alt={"Typescript icon"}
           />
           <div className="skill-card">
@@ -164,7 +168,7 @@ function App() {
             websiteLink={"https://task-tracker-9966c.web.app/"}
             projDesc="This is a kanban style task tracking app that uses local storage
           to remember user input"
-            skillsUsed={["HTML", "CSS", "React"]}
+            skillsUsed={[html, css, react]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
@@ -178,7 +182,7 @@ function App() {
             websiteLink={"https://movie-app-539e7.web.app/"}
             projDesc="Uses the MovieDB API to display movies along with their
             descriptions, ratings and a trailer"
-            skillsUsed={["HTML", "CSS", "JS"]}
+            skillsUsed={[html, css, js]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
@@ -189,7 +193,7 @@ function App() {
             githubLink={"https://github.com/ramenDiet/typeracer"}
             websiteLink={"https://typeracer-fc2b9.web.app/"}
             projDesc="Typeracer clone built to practice typing speed and accuracy"
-            skillsUsed={["React", "TailwindCSS", "Typescript"]}
+            skillsUsed={[react, tailwindcss, typescript]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
@@ -202,7 +206,7 @@ function App() {
             }
             websiteLink={"https://login-card-ba8c3.web.app/"}
             projDesc="A sample login card with form input and a dark mode toggle"
-            skillsUsed={["HTML", "CSS", "JS"]}
+            skillsUsed={[html, css, js]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
@@ -216,7 +220,7 @@ function App() {
             websiteLink={"https://chinoblends.com/"}
             projDesc="A responsive barber site with an image carousel, sticky navigation
             and mobile hamburger"
-            skillsUsed={["HTML", "CSS", "JS"]}
+            skillsUsed={[html, css, js]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
@@ -229,7 +233,7 @@ function App() {
             }
             websiteLink={"https://responsive-layouts.web.app/"}
             projDesc="A fully responsive example website layout"
-            skillsUsed={["HTML", "CSS", "JS"]}
+            skillsUsed={[html, css, js]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
