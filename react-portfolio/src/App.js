@@ -175,14 +175,13 @@ function App() {
           />
 
           <ProjectCard
-            cssSelector={"movie-app"}
+            cssSelector={"entertainment-app"}
             githubLink={
-              "https://github.com/ramenDiet/10-more-JS-projects/tree/master/movies"
+              "https://github.com/ramenDiet/entertainment-web-app"
             }
-            websiteLink={"https://movie-app-539e7.web.app/"}
-            projDesc="Uses the MovieDB API to display movies along with their
-            descriptions, ratings and a trailer"
-            skillsUsed={[html, css, js]}
+            websiteLink={"https://entertainment-app-4ce2a.web.app/"}
+            projDesc="Entertainment app built with React. User can search movies, bookmark items or get more information by clicking on an item."
+            skillsUsed={[html, css, react]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}
