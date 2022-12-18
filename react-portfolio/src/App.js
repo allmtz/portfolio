@@ -15,6 +15,8 @@ import js from './skills-icons/js.svg'
 import react from './skills-icons/react.svg'
 import tailwindcss from './skills-icons/tailwindcss.svg'
 import typescript from './skills-icons/typescript.svg'
+import sass from './skills-icons/sass.svg'
+
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
@@ -140,6 +142,14 @@ function App() {
             imgSrc={tailwindcss}
             alt={"TailwindCSS icon"}
           />
+
+          <SkillCard
+            skillName={"Sass"}
+            imgSrc={sass}
+            alt={"SASS icon"}
+          />
+
+
           <SkillCard
             skillName={"Typescript"}
             imgSrc={typescript}
