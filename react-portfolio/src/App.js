@@ -149,7 +149,6 @@ function App() {
             alt={"SASS icon"}
           />
 
-
           <SkillCard
             skillName={"Typescript"}
             imgSrc={typescript}
@@ -192,6 +191,20 @@ function App() {
             websiteLink={"https://entertainment-app-4ce2a.web.app/"}
             projDesc="Entertainment app built with React. User can search movies, bookmark items or get more information by clicking on an item."
             skillsUsed={[html, css, react]}
+            nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
+          />
+
+          <ProjectCard
+            cssSelector={"galleria-slideshow"}
+            githubLink={
+              "https://github.com/ramenDiet/galleria-slideshow"
+            }
+            websiteLink={"https://imaginative-cajeta-48538a.netlify.app/"}
+            projDesc="A responsive gallery website built with a mobile-first approach.
+            Includes a user controlled slideshow feature"
+            skillsUsed={[react, sass, js]}
             nanoid={nanoid}
             displayLinks={displayLinks}
             hideLinks={hideLinks}

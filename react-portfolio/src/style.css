@@ -294,8 +294,13 @@ header button:hover {
 .responsive-site {
   background-image: url("/src/project-images/responsive-site.png");
 }
+
 .typeracer {
   background-image: url("/src/project-images/typeracer.png");
+}
+
+.galleria-slideshow {
+  background-image: url("/src/project-images/galleria-slideshow.png");
 }
 
 /* contact */
