@@ -226,41 +226,43 @@ header button:hover {
 .project-card {
   padding: 2rem 1rem;
   box-shadow: 0 5px 5px 1px black;
+  max-width: 350px;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.project-card p {
-  max-width: 15rem;
+.project-image{
+  width: 100%;
+  height: auto;
+}
+
+.project-desc {
+  padding: 1rem;
+  font-size: 18px;
 }
 
 .project-skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 0.3rem;
-  max-width: 16rem;
 }
 
 .project-display {
-  height: 16rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .project-links {
+  position: absolute;
+  top: 0;
   display: none;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   width: 100%;
-  height: 100%;
+  height: 98%;
   background-image: linear-gradient(#20bf556c, #01bbef9c);
 }
 
@@ -278,37 +280,6 @@ header button:hover {
   border-radius: 10px;
 }
 
-.task-tracker {
-  background-image: url("/src/project-images/task-tracker.png");
-}
-
-.entertainment-app {
-  background-image: url("/src/project-images/entertainment-app.png");
-}
-
-.barber-site {
-  background-image: url("/src/project-images/barber-site.png");
-}
-
-.login-card {
-  background-image: url("/src/project-images/login-card.png");
-}
-
-.responsive-site {
-  background-image: url("/src/project-images/responsive-site.png");
-}
-
-.typeracer {
-  background-image: url("/src/project-images/typeracer.png");
-}
-
-.galleria-slideshow {
-  background-image: url("/src/project-images/galleria-slideshow.png");
-}
-
-.pomodoro-app {
-  background-image: url("/src/project-images/pomodoro.png");
-}
 /* contact */
 
 form {
