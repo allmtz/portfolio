@@ -3,10 +3,11 @@ import { hideLinks } from "../App"
 import { nanoid } from "nanoid"
 
 
-function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUsed} ){
+function ProjectCard( {projectName, githubLink, websiteLink, projDesc, skillsUsed, imageSrc} ){
     return(
         <div onMouseEnter={displayLinks} onMouseLeave={hideLinks} className="project-card" >
-            <div className={`project-display ${cssSelector}`}>
+            <div className="project-display">
+                <img className="project-image" src={imageSrc} alt="project home page" /> 
             <div className="project-links">
                 <a
                 href= {githubLink}
@@ -18,7 +19,7 @@ function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUse
                     style={{color: "black"}}
                     width="50"
                     height="50"
-                ></iconify-icon>
+                    ></iconify-icon>
                 </a>
                 <a
                 className="demo-link"
@@ -34,7 +35,7 @@ function ProjectCard( {cssSelector, githubLink, websiteLink, projDesc, skillsUse
             <div className='project-skills-container'>
                 {skillsUsed.map(skill =>                
                  <img key={nanoid()} src={skill} alt={`skill icon`} />
-                )}
+                 )}
             </div>
         </div>
     )

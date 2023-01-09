@@ -5,7 +5,6 @@ import { NavBar } from "./componenets/Navbar";
 import { About } from "./componenets/About";
 import { SkillCard } from "./componenets/SkillCard";
 import { ProjectCard } from "./componenets/ProjectCard";
-import { nanoid } from "nanoid";
 import { ContactForm } from "./componenets/ContactForm";
 
 import css from './skills-icons/css.svg'
@@ -17,6 +16,15 @@ import tailwindcss from './skills-icons/tailwindcss.svg'
 import typescript from './skills-icons/typescript.svg'
 import sass from './skills-icons/sass.svg'
 
+//project images
+import barberImg from './project-images/barber-site.png'
+import entertainmentImg from './project-images/entertainment-app.png'
+import galleriaImg from './project-images/galleria-slideshow.png'
+import loginImg from './project-images/login-card.png'
+import pomodoroImg from './project-images/pomodoro.png'
+import responsiveSiteImg from './project-images/responsive-site.png'
+import taskTrackerImg from './project-images/task-tracker.png'
+import typeracerImg from './project-images/typeracer.png'
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
@@ -172,26 +180,28 @@ function App() {
 
         <div className="project-container row">
           <ProjectCard
-            cssSelector={"task-tracker"}
+            projectName={"Kanban Task Tracker"}
             githubLink={"https://github.com/ramenDiet/task-tracker"}
             websiteLink={"https://task-tracker-9966c.web.app/"}
             projDesc="This is a kanban style task tracking app that uses local storage
           to remember user input"
             skillsUsed={[html, css, react]}
+            imageSrc={taskTrackerImg}
           />
 
           <ProjectCard
-            cssSelector={"entertainment-app"}
+            projectName={"Entertainment App"}
             githubLink={
               "https://github.com/ramenDiet/entertainment-web-app"
             }
             websiteLink={"https://entertainment-app-4ce2a.web.app/"}
             projDesc="Entertainment app built with React. User can search movies, bookmark items or get more information by clicking on an item."
             skillsUsed={[html, css, react]}
+            imageSrc={entertainmentImg}
           />
 
           <ProjectCard
-            cssSelector={"galleria-slideshow"}
+            projectName={"Galleria Slideshow"}
             githubLink={
               "https://github.com/ramenDiet/galleria-slideshow"
             }
@@ -199,38 +209,42 @@ function App() {
             projDesc="A responsive gallery website built with a mobile-first approach.
             Includes a user controlled slideshow feature"
             skillsUsed={[react, sass, js]}
+            imageSrc={galleriaImg}
           />
 
           <ProjectCard
-            cssSelector={"pomodoro-app"}
+            projectName={"Pomodoro Timer"}
             githubLink={
               "https://github.com/ramenDiet/Pomodoro-App"
             }
             websiteLink={"https://majestic-cuchufli-f2af29.netlify.app"}
             projDesc="A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining "
             skillsUsed={[typescript, react, tailwindcss]}
+            imageSrc={pomodoroImg}
           />
 
           <ProjectCard
-            cssSelector={"typeracer"}
+            projectName={"Typeracer"}
             githubLink={"https://github.com/ramenDiet/typeracer"}
             websiteLink={"https://typeracer-fc2b9.web.app/"}
             projDesc="Typeracer clone built to practice typing speed and accuracy"
             skillsUsed={[react, tailwindcss, typescript]}
+            imageSrc={typeracerImg}
           />
 
           <ProjectCard
-            cssSelector={"login-card"}
+            projectName={"Login Card"}
             githubLink={
               "https://github.com/ramenDiet/random-projects/tree/main/login-card"
             }
             websiteLink={"https://login-card-ba8c3.web.app/"}
             projDesc="A sample login card with form input and a dark mode toggle"
             skillsUsed={[html, css, js]}
+            imageSrc={loginImg}
           />
 
           <ProjectCard
-            cssSelector={"barber-site"}
+            projectName={"Barber Site"}
             githubLink={
               "https://github.com/ramenDiet/random-projects/tree/main/barber-site"
             }
@@ -238,16 +252,18 @@ function App() {
             projDesc="A responsive barber site with an image carousel, sticky navigation
             and mobile hamburger"
             skillsUsed={[html, css, js]}
+            imageSrc={barberImg}
           />
 
           <ProjectCard
-            cssSelector={"responsive-site"}
+            projectName={"Responsive Site"}
             githubLink={
               "https://github.com/ramenDiet/Responsive-Layout-Challenge"
             }
             websiteLink={"https://responsive-layouts.web.app/"}
             projDesc="A fully responsive example website layout"
             skillsUsed={[html, css, js]}
+            imageSrc={responsiveSiteImg}
           />
         </div>
 
