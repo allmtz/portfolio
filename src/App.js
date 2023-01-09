@@ -26,12 +26,12 @@ window.addEventListener("resize", (e) => {
   return;
 });
 
-function displayLinks(e) {
+export function displayLinks(e) {
   if(e.target.querySelector(".project-links"))
   e.target.querySelector(".project-links").style.display = "flex";
 }
 
-function hideLinks() {
+export function hideLinks() {
   const projectLinks = document.querySelectorAll(".project-links");
   projectLinks.forEach((link) => (link.style.display = "none"));
 }
@@ -178,9 +178,6 @@ function App() {
             projDesc="This is a kanban style task tracking app that uses local storage
           to remember user input"
             skillsUsed={[html, css, react]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -191,9 +188,6 @@ function App() {
             websiteLink={"https://entertainment-app-4ce2a.web.app/"}
             projDesc="Entertainment app built with React. User can search movies, bookmark items or get more information by clicking on an item."
             skillsUsed={[html, css, react]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -205,9 +199,6 @@ function App() {
             projDesc="A responsive gallery website built with a mobile-first approach.
             Includes a user controlled slideshow feature"
             skillsUsed={[react, sass, js]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -218,9 +209,6 @@ function App() {
             websiteLink={"https://majestic-cuchufli-f2af29.netlify.app"}
             projDesc="A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining "
             skillsUsed={[typescript, react, tailwindcss]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -229,9 +217,6 @@ function App() {
             websiteLink={"https://typeracer-fc2b9.web.app/"}
             projDesc="Typeracer clone built to practice typing speed and accuracy"
             skillsUsed={[react, tailwindcss, typescript]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -242,9 +227,6 @@ function App() {
             websiteLink={"https://login-card-ba8c3.web.app/"}
             projDesc="A sample login card with form input and a dark mode toggle"
             skillsUsed={[html, css, js]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -256,9 +238,6 @@ function App() {
             projDesc="A responsive barber site with an image carousel, sticky navigation
             and mobile hamburger"
             skillsUsed={[html, css, js]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
 
           <ProjectCard
@@ -269,9 +248,6 @@ function App() {
             websiteLink={"https://responsive-layouts.web.app/"}
             projDesc="A fully responsive example website layout"
             skillsUsed={[html, css, js]}
-            nanoid={nanoid}
-            displayLinks={displayLinks}
-            hideLinks={hideLinks}
           />
         </div>
 
