@@ -303,6 +303,9 @@ header button:hover {
   background-image: url("/src/project-images/galleria-slideshow.png");
 }
 
+.pomodoro-app {
+  background-image: url("/src/project-images/pomodoro.png");
+}
 /* contact */
 
 form {

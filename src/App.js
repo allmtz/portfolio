@@ -211,6 +211,19 @@ function App() {
           />
 
           <ProjectCard
+            cssSelector={"pomodoro-app"}
+            githubLink={
+              "https://github.com/ramenDiet/Pomodoro-App"
+            }
+            websiteLink={"https://majestic-cuchufli-f2af29.netlify.app"}
+            projDesc="A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining "
+            skillsUsed={[typescript, react, tailwindcss]}
+            nanoid={nanoid}
+            displayLinks={displayLinks}
+            hideLinks={hideLinks}
+          />
+
+          <ProjectCard
             cssSelector={"typeracer"}
             githubLink={"https://github.com/ramenDiet/typeracer"}
             websiteLink={"https://typeracer-fc2b9.web.app/"}
