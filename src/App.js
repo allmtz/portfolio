@@ -34,16 +34,6 @@ window.addEventListener("resize", (e) => {
   return;
 });
 
-export function displayLinks(e) {
-  if(e.target.querySelector(".project-links"))
-  e.target.querySelector(".project-links").style.display = "flex";
-}
-
-export function hideLinks() {
-  const projectLinks = document.querySelectorAll(".project-links");
-  projectLinks.forEach((link) => (link.style.display = "none"));
-}
-
 function wave() {
   let i = 0;
   const nameSpans = document.querySelectorAll(".name-container span");

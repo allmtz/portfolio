@@ -209,6 +209,7 @@ header button:hover {
   padding: 2rem 1rem;
   box-shadow: 0 5px 5px 2px black;
   border: 2px solid black;
+  width: 120px;
 }
 
 .skill-card:hover {
@@ -227,7 +228,7 @@ header button:hover {
   padding: 2rem 1rem;
   box-shadow: 0 5px 5px 1px black;
   max-width: 350px;
-  border: 2px solid black;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -255,29 +256,21 @@ header button:hover {
 }
 
 .project-links {
-  position: absolute;
-  top: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  height: 98%;
-  background-image: linear-gradient(#20bf556c, #01bbef9c);
-}
-
-.project-links:hover {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-links a:hover {
   scale: 1.1;
-}
+} 
 
 .demo-link {
-  background-color: var(--bg-color);
+  background-color: var(--accent-color);
   padding: 1rem 0.75rem;
-  border-radius: 10px;
+  border-radius: 10px; 
 }
 
 /* contact */
