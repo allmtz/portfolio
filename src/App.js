@@ -112,52 +112,66 @@ function App() {
           <SkillCard
             skillName={"CSS"}
             imgSrc={css}
-
             alt={"CSS icon"}
+            highlightColor={"#2878e2"}
           />
           <SkillCard
             skillName={"HTML"}
             imgSrc={html}
             alt={"HTML icon"}
+            highlightColor={"#ff7f08"}
           />
           <SkillCard
             skillName={"JavaScript"}
             imgSrc={js}
             alt={"JS icon"}
+            highlightColor={"yellow"}
           />
           <SkillCard
             skillName={"React"}
             imgSrc={react}
             alt={"React icon"}
+            highlightColor={"#0dcff1"}
           />
           <SkillCard
             skillName={"Firebase"}
             imgSrc={firebase}
             alt={"Firebase icon"}
+            highlightColor={"#ffbc03"}
           />
           <SkillCard
             skillName={"TailwindCSS"}
             imgSrc={tailwindcss}
             alt={"TailwindCSS icon"}
+            highlightColor={"aqua"}
           />
 
           <SkillCard
             skillName={"Sass"}
             imgSrc={sass}
             alt={"SASS icon"}
+            highlightColor={"#bb5b96fb"}
           />
 
           <SkillCard
             skillName={"Typescript"}
             imgSrc={typescript}
             alt={"Typescript icon"}
+            highlightColor={"#2583cf"}
           />
-          <div className="skill-card">
+          <div className="skill-card" 
+              onMouseEnter={ (e) =>{
+                e.target.closest(".skill-card").style.boxShadow = `0px 0px 20px 3px white`
+              }}
+              onMouseLeave={ () => { 
+                document.querySelectorAll(".skill-card").forEach( card => card.style.boxShadow = "0px 5px 5px 2px black")
+              } }
+            >
             <iconify-icon
               icon="codicon:github-inverted"
               style={{ color: "white" }}
-              width="80"
-              height="80"
+              width="70"
+              height="70"
             ></iconify-icon>
             <p>GitHub</p>
           </div>
