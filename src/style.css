@@ -210,6 +210,7 @@ header button:hover {
   box-shadow: 0 5px 5px 2px black;
   border: 2px solid black;
   width: 120px;
+  transition-duration: 300ms;
 }
 
 .skill-card:hover {
@@ -259,17 +260,19 @@ header button:hover {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
-  margin-bottom: 1rem;
 }
 
 .project-links a:hover {
   scale: 1.1;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
 } 
 
 .demo-link {
   background-color: var(--accent-color);
-  padding: 1rem 0.75rem;
+  padding:  0.75rem;
   border-radius: 10px; 
 }
 
