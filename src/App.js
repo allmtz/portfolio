@@ -170,22 +170,12 @@ function App() {
 
         <div className="project-container row">
           <ProjectCard
-            projectName={"Kanban Task Tracker"}
-            githubLink={"https://github.com/ramenDiet/task-tracker"}
-            websiteLink={"https://task-tracker-9966c.web.app/"}
-            projDesc="This is a kanban style task tracking app that uses local storage
-          to remember user input"
-            skillsUsed={[html, css, react]}
-            imageSrc={taskTrackerImg}
-          />
-
-          <ProjectCard
             projectName={"Entertainment App"}
             githubLink={
               "https://github.com/ramenDiet/entertainment-web-app"
             }
             websiteLink={"https://entertainment-app-4ce2a.web.app/"}
-            projDesc="Entertainment app built with React. User can search movies, bookmark items or get more information by clicking on an item."
+            projDesc="Entertainment app built with React and TMDB API. User can search movies, bookmark items or get more information by clicking on an item."
             skillsUsed={[html, css, react]}
             imageSrc={entertainmentImg}
           />
@@ -197,11 +187,21 @@ function App() {
             }
             websiteLink={"https://imaginative-cajeta-48538a.netlify.app/"}
             projDesc="A responsive gallery website built with a mobile-first approach.
-            Includes a user controlled slideshow feature"
+            Includes a user controlled slideshow feature."
             skillsUsed={[react, sass, js]}
             imageSrc={galleriaImg}
           />
 
+          <ProjectCard
+            projectName={"Kanban Task Tracker"}
+            githubLink={"https://github.com/ramenDiet/task-tracker"}
+            websiteLink={"https://task-tracker-9966c.web.app/"}
+            projDesc="This is a kanban style task tracking app that uses local storage
+          to remember user input"
+            skillsUsed={[html, css, react]}
+            imageSrc={taskTrackerImg}
+          />
+          
           <ProjectCard
             projectName={"Pomodoro Timer"}
             githubLink={
