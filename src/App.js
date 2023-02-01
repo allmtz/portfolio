@@ -200,7 +200,7 @@ function App() {
               "https://github.com/ramenDiet/galleria-slideshow"
             }
             websiteLink={"https://imaginative-cajeta-48538a.netlify.app/"}
-            projDesc="A responsive gallery website built with a mobile-first approach.
+            projDesc="A modern gallery built with a responsive mobile-first approach.
             Includes a user controlled slideshow feature."
             skillsUsed={[react, sass, js]}
             imageSrc={galleriaImg}
@@ -210,8 +210,7 @@ function App() {
             projectName={"Kanban Task Tracker"}
             githubLink={"https://github.com/ramenDiet/task-tracker"}
             websiteLink={"https://task-tracker-9966c.web.app/"}
-            projDesc="This is a kanban style task tracking app that uses local storage
-          to remember user input"
+            projDesc="This Kanban task tracker is a fully responsive React application and includes a light/dark toggle."
             skillsUsed={[html, css, react]}
             imageSrc={taskTrackerImg}
           />
