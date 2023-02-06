@@ -15,6 +15,7 @@ import react from './skills-icons/react.svg'
 import tailwindcss from './skills-icons/tailwindcss.svg'
 import typescript from './skills-icons/typescript.svg'
 import sass from './skills-icons/sass.svg'
+import nextJS from './skills-icons/next-js.svg'
 
 //project images
 import barberImg from './project-images/barber-site.png'
@@ -25,6 +26,7 @@ import pomodoroImg from './project-images/pomodoro.png'
 import responsiveSiteImg from './project-images/responsive-site.png'
 import taskTrackerImg from './project-images/task-tracker.png'
 import typeracerImg from './project-images/typeracer.png'
+import scootImg from './project-images/scoot.png'
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
@@ -134,6 +136,12 @@ function App() {
             highlightColor={"#0dcff1"}
           />
           <SkillCard
+            skillName={"Next.js"}
+            imgSrc={nextJS}
+            alt={"Next.js icon"}
+            highlightColor={"white"}
+          />
+          <SkillCard
             skillName={"Firebase"}
             imgSrc={firebase}
             alt={"Firebase icon"}
@@ -183,6 +191,16 @@ function App() {
         <p>What I've been up to</p>
 
         <div className="project-container row">
+        <ProjectCard
+            projectName={"Scoot Website"}
+            githubLink={
+              "https://github.com/ramenDiet/scoot"
+            }
+            websiteLink={"https://scoot-phi.vercel.app"}
+            projDesc="Multi-page fully responsive mock scooter rental website. Custom design built with React, Next.js, TypeScript and TailwindCSS."
+            skillsUsed={[html, css, react, tailwindcss]}
+            imageSrc={scootImg}
+          />
           <ProjectCard
             projectName={"Entertainment App"}
             githubLink={
