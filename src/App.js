@@ -16,6 +16,9 @@ import tailwindcss from "./skills-icons/tailwindcss.svg";
 import typescript from "./skills-icons/typescript.svg";
 import sass from "./skills-icons/sass.svg";
 import nextJS from "./skills-icons/next-js.svg";
+import git from "./skills-icons/git.svg";
+import nodejs from "./skills-icons/nodejs.svg";
+import mysql from "./skills-icons/mysql.svg";
 
 //project images
 import barberImg from "./project-images/barber-site.png";
@@ -166,6 +169,27 @@ function App() {
             imgSrc={typescript}
             alt={"Typescript icon"}
             highlightColor={"#2583cf"}
+          />
+
+          <SkillCard
+            skillName={"Git"}
+            imgSrc={git}
+            alt={"Git icon"}
+            highlightColor={"#F0512F"}
+          />
+
+          <SkillCard
+            skillName={"MySQL"}
+            imgSrc={mysql}
+            alt={"MySQL icon"}
+            highlightColor={"#0F8EBB"}
+          />
+
+          <SkillCard
+            skillName={"Node.js"}
+            imgSrc={nodejs}
+            alt={"Node.js icon"}
+            highlightColor={"#69AB43"}
           />
           <div
             className="skill-card"
