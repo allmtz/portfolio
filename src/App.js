@@ -7,26 +7,26 @@ import { SkillCard } from "./componenets/SkillCard";
 import { ProjectCard } from "./componenets/ProjectCard";
 import { ContactForm } from "./componenets/ContactForm";
 
-import css from './skills-icons/css.svg'
-import firebase from './skills-icons/firebase.svg'
-import html from './skills-icons/html.svg'
-import js from './skills-icons/js.svg'
-import react from './skills-icons/react.svg'
-import tailwindcss from './skills-icons/tailwindcss.svg'
-import typescript from './skills-icons/typescript.svg'
-import sass from './skills-icons/sass.svg'
-import nextJS from './skills-icons/next-js.svg'
+import css from "./skills-icons/css.svg";
+import firebase from "./skills-icons/firebase.svg";
+import html from "./skills-icons/html.svg";
+import js from "./skills-icons/js.svg";
+import react from "./skills-icons/react.svg";
+import tailwindcss from "./skills-icons/tailwindcss.svg";
+import typescript from "./skills-icons/typescript.svg";
+import sass from "./skills-icons/sass.svg";
+import nextJS from "./skills-icons/next-js.svg";
 
 //project images
-import barberImg from './project-images/barber-site.png'
-import entertainmentImg from './project-images/entertainment-app.png'
-import galleriaImg from './project-images/galleria-slideshow.png'
-import loginImg from './project-images/login-card.png'
-import pomodoroImg from './project-images/pomodoro.png'
-import responsiveSiteImg from './project-images/responsive-site.png'
-import taskTrackerImg from './project-images/task-tracker.png'
-import typeracerImg from './project-images/typeracer.png'
-import scootImg from './project-images/scoot.png'
+import barberImg from "./project-images/barber-site.png";
+import entertainmentImg from "./project-images/entertainment-app.png";
+import galleriaImg from "./project-images/galleria-slideshow.png";
+import loginImg from "./project-images/login-card.png";
+import pomodoroImg from "./project-images/pomodoro.png";
+import responsiveSiteImg from "./project-images/responsive-site.png";
+import taskTrackerImg from "./project-images/task-tracker.png";
+import typeracerImg from "./project-images/typeracer.png";
+import scootImg from "./project-images/scoot.png";
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
@@ -167,14 +167,21 @@ function App() {
             alt={"Typescript icon"}
             highlightColor={"#2583cf"}
           />
-          <div className="skill-card" 
-              onMouseEnter={ (e) =>{
-                e.target.closest(".skill-card").style.boxShadow = `0px 0px 20px 3px white`
-              }}
-              onMouseLeave={ () => { 
-                document.querySelectorAll(".skill-card").forEach( card => card.style.boxShadow = "0px 5px 5px 2px black")
-              } }
-            >
+          <div
+            className="skill-card"
+            onMouseEnter={(e) => {
+              e.target.closest(
+                ".skill-card"
+              ).style.boxShadow = `0px 0px 20px 3px white`;
+            }}
+            onMouseLeave={() => {
+              document
+                .querySelectorAll(".skill-card")
+                .forEach(
+                  (card) => (card.style.boxShadow = "0px 5px 5px 2px black")
+                );
+            }}
+          >
             <iconify-icon
               icon="codicon:github-inverted"
               style={{ color: "white" }}
@@ -191,11 +198,9 @@ function App() {
         <p>What I've been up to</p>
 
         <div className="project-container row">
-        <ProjectCard
+          <ProjectCard
             projectName={"Scoot Website"}
-            githubLink={
-              "https://github.com/ramenDiet/scoot"
-            }
+            githubLink={"https://github.com/allmtz/scoot"}
             websiteLink={"https://scoot-phi.vercel.app"}
             projDesc="Multi-page fully responsive mock scooter rental website. Custom design built with React, Next.js, TypeScript and TailwindCSS."
             skillsUsed={[html, css, react, tailwindcss]}
@@ -203,9 +208,7 @@ function App() {
           />
           <ProjectCard
             projectName={"Entertainment App"}
-            githubLink={
-              "https://github.com/ramenDiet/entertainment-web-app"
-            }
+            githubLink={"https://github.com/allmtz/entertainment-web-app"}
             websiteLink={"https://entertainment-app-4ce2a.web.app/"}
             projDesc="Entertainment app built with React and TMDB API. User can search movies, bookmark items or get more information by clicking on an item."
             skillsUsed={[html, css, react]}
@@ -214,9 +217,7 @@ function App() {
 
           <ProjectCard
             projectName={"Galleria Slideshow"}
-            githubLink={
-              "https://github.com/ramenDiet/galleria-slideshow"
-            }
+            githubLink={"https://github.com/allmtz/galleria-slideshow"}
             websiteLink={"https://imaginative-cajeta-48538a.netlify.app/"}
             projDesc="A modern gallery built with a responsive mobile-first approach.
             Includes a user controlled slideshow feature."
@@ -226,18 +227,16 @@ function App() {
 
           <ProjectCard
             projectName={"Kanban Task Tracker"}
-            githubLink={"https://github.com/ramenDiet/task-tracker"}
+            githubLink={"https://github.com/allmtz/task-tracker"}
             websiteLink={"https://task-tracker-9966c.web.app/"}
             projDesc="This Kanban task tracker is a fully responsive React application and includes a light/dark toggle."
             skillsUsed={[html, css, react]}
             imageSrc={taskTrackerImg}
           />
-          
+
           <ProjectCard
             projectName={"Pomodoro Timer"}
-            githubLink={
-              "https://github.com/ramenDiet/Pomodoro-App"
-            }
+            githubLink={"https://github.com/allmtz/Pomodoro-App"}
             websiteLink={"https://majestic-cuchufli-f2af29.netlify.app"}
             projDesc="A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining "
             skillsUsed={[typescript, react, tailwindcss]}
@@ -246,7 +245,7 @@ function App() {
 
           <ProjectCard
             projectName={"Typeracer"}
-            githubLink={"https://github.com/ramenDiet/typeracer"}
+            githubLink={"https://github.com/allmtz/typeracer"}
             websiteLink={"https://typeracer-fc2b9.web.app/"}
             projDesc="Typeracer clone built to practice typing speed and accuracy"
             skillsUsed={[react, tailwindcss, typescript]}
@@ -256,7 +255,7 @@ function App() {
           <ProjectCard
             projectName={"Login Card"}
             githubLink={
-              "https://github.com/ramenDiet/random-projects/tree/main/login-card"
+              "https://github.com/allmtz/random-projects/tree/main/login-card"
             }
             websiteLink={"https://login-card-ba8c3.web.app/"}
             projDesc="A sample login card with form input and a dark mode toggle"
@@ -267,7 +266,7 @@ function App() {
           <ProjectCard
             projectName={"Barber Site"}
             githubLink={
-              "https://github.com/ramenDiet/random-projects/tree/main/barber-site"
+              "https://github.com/allmtz/random-projects/tree/main/barber-site"
             }
             websiteLink={"https://chinoblends.com/"}
             projDesc="A responsive barber site with an image carousel, sticky navigation
@@ -278,9 +277,7 @@ function App() {
 
           <ProjectCard
             projectName={"Responsive Site"}
-            githubLink={
-              "https://github.com/ramenDiet/Responsive-Layout-Challenge"
-            }
+            githubLink={"https://github.com/allmtz/Responsive-Layout-Challenge"}
             websiteLink={"https://responsive-layouts.web.app/"}
             projDesc="A fully responsive example website layout"
             skillsUsed={[html, css, js]}
