@@ -5,7 +5,8 @@
   --grid-gap: 1rem;
   --card-pad: 1rem;
   --card-border-radius: 20px;
-  --card-color: #ebeaeae6;
+  /* --card-color: #ebeaeae6; */
+  --card-color: whitesmoke;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   /* background-color: var(--bg-color); */
-  background-color: whitesmoke;
+  background-color: white;
   color: whitesmoke;
 }
 

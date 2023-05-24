@@ -19,7 +19,7 @@ export const Projects = () => {
         imageSrc={scoot}
         github={"https://github.com/allmtz/scoot"}
         demo={"https://scoot-phi.vercel.app/"}
-        bgColor={"white"}
+        bgColor={"whitesmoke"}
         txtColor={"black"}
         imgPosition={"left"}
       />
@@ -55,7 +55,7 @@ export const Projects = () => {
         imageSrc={gallery}
         github={"https://github.com/allmtz/galleria-slideshow"}
         demo={"https://imaginative-cajeta-48538a.netlify.app/"}
-        bgColor={"white"}
+        bgColor={"whitesmoke"}
         txtColor={"black"}
         imgPosition={"left"}
       />
@@ -67,7 +67,7 @@ export const Projects = () => {
         imageSrc={hk}
         github={"https://github.com/allmtz/hotkey-checker"}
         demo={"https://hotkey-checker.vercel.app/"}
-        bgColor={"white"}
+        bgColor={"whitesmoke"}
         txtColor={"black"}
         imgPosition={"center"}
       />
