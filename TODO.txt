@@ -1,0 +1,21 @@
+* choose a font
+
+* hover effects
+    - nav bar
+    - social icons
+    - projects?
+
+* finish styling
+    * <Project>
+        - github and demo links
+    * <Skills>
+        - add the rest of the skills
+
+* sticking with these colors?
+
+* avatar
+
+* add the rest of the Projects
+    - look into improving image quality
+
+* add breakpointss
