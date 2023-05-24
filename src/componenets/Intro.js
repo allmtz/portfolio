@@ -19,7 +19,7 @@ export const Intro = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/jobs/view/front-end-engineer-multiple-openings-from-jr-to-lead-staff-architect-level-consumer-fintech-at-skyrocket-ventures-3020302070/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+            href="https://www.linkedin.com/in/allan-martinez-ab8848252/"
           >
             <img className="social" src={linkedIn} alt="linkedin" />
           </a>
