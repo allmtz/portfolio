@@ -8,6 +8,9 @@ import tailwindcss from "../skills-icons/tailwindcss.svg";
 import typescript from "../skills-icons/typescript.svg";
 import sass from "../skills-icons/sass.svg";
 import nextJS from "../skills-icons/next-js.svg";
+import github from "../skills-icons/github.svg";
+import nodejs from "../skills-icons/nodejs.svg";
+import mysql from "../skills-icons/mysql.svg";
 
 export const Skills = () => {
   return (
@@ -24,6 +27,9 @@ export const Skills = () => {
           <img src={tailwindcss} alt="tailwindCSS" />
           <img src={sass} alt="sass" />
           <img src={nextJS} alt="nextJS" />
+          <img src={github} alt="github" />
+          <img src={nodejs} alt="nodeJS" />
+          <img src={mysql} alt="mysql" />
         </div>
       </section>
     </div>
