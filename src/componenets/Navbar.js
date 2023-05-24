@@ -1,6 +1,10 @@
 function NavBar() {
   return (
     <nav>
+      <div className="online-container">
+        <div className="green-circle"></div>
+        <p>online</p>
+      </div>
       <ul>
         <li>
           <a href="#about">About</a>

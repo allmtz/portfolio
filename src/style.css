@@ -34,11 +34,13 @@ a {
 
 img {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .layout {
   max-width: 1200px;
   margin: auto;
+  padding-bottom: 1rem;
 }
 
 .grid {
@@ -52,11 +54,13 @@ img {
     "intro  avatar skills";
 }
 
+
 nav {
   /* border: 2px solid black; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1rem;
+  color: black;
 }
 
 nav ul {
@@ -70,6 +74,19 @@ nav ul {
 nav ul a {
   text-decoration: none;
   color: black;
+}
+
+.online-container{
+  display: flex;
+  gap: .3rem;
+  align-items: center;
+}
+
+ .green-circle{
+  height: 15px;
+  width: 15px;
+  background-color: rgb(6, 206, 6);
+  border-radius: 100%;
 }
 
 .card {
@@ -171,7 +188,7 @@ nav ul a {
 
 .avatar-card {
   grid-area: avatar;
-  background-color: #0a192f;
+  background-color: #202020;
 }
 
 .location-card {

@@ -23,7 +23,6 @@ export const Projects = () => {
         txtColor={"black"}
         imgPosition={"left"}
       />
-
       <Project
         title={"Movie App"}
         desc={
@@ -36,7 +35,18 @@ export const Projects = () => {
         txtColor={"whitesmoke"}
         imgPosition={"left"}
       />
-
+      <Project
+        title={"Kanban Task Tracker"}
+        desc={
+          "This Kanban task tracker is a fully responsive React application and includes a light/dark toggle."
+        }
+        imageSrc={kanban}
+        github={"https://github.com/allmtz/task-tracker"}
+        demo={"https://task-tracker-9966c.web.app/"}
+        bgColor={"#202020"}
+        txtColor={"white"}
+        imgPosition={"left"}
+      />
       <Project
         title={"Art Gallery"}
         desc={
@@ -49,20 +59,18 @@ export const Projects = () => {
         txtColor={"black"}
         imgPosition={"left"}
       />
-
       <Project
-        title={"Kanban Task Tracker"}
+        title={"Hotkey Checker"}
         desc={
-          "This Kanban task tracker is a fully responsive React application and includes a light/dark toggle."
+          "A tool that allows developers to quickly find reserved hotkeys for various browsers"
         }
-        imageSrc={kanban}
-        github={"https://github.com/allmtz/task-tracker"}
-        demo={"https://task-tracker-9966c.web.app/"}
-        bgColor={"orange"}
+        imageSrc={hk}
+        github={"https://github.com/allmtz/hotkey-checker"}
+        demo={"https://hotkey-checker.vercel.app/"}
+        bgColor={"white"}
         txtColor={"black"}
-        imgPosition={"left"}
+        imgPosition={"center"}
       />
-
       <Project
         title={"Pomodoro"}
         desc={
@@ -71,21 +79,11 @@ export const Projects = () => {
         imageSrc={pomodoro}
         github={"https://github.com/allmtz/Pomodoro-App"}
         demo={"https://majestic-cuchufli-f2af29.netlify.app/"}
-        bgColor={"orange"}
-        txtColor={"black"}
+        bgColor={"#120c2c"}
+        txtColor={"white"}
         imgPosition={"center"}
       />
-
-      <Project
-        title={"Hotkey Checker"}
-        desc={"a tool"}
-        imageSrc={hk}
-        github={"https://github.com/allmtz/hotkey-checker"}
-        demo={"https://hotkey-checker.vercel.app/"}
-        bgColor={"white"}
-        txtColor={"black"}
-        imgPosition={"center"}
-      />
+      33
     </>
   );
 };
