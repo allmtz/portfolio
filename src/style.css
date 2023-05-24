@@ -27,13 +27,21 @@ body {
   color: whitesmoke;
 }
 
+a {
+  text-decoration: none;
+  color: none;
+}
+
+img {
+  object-fit: cover;
+}
+
 .layout {
   max-width: 1200px;
   margin: auto;
 }
 
 .grid {
-  /* border: 2px solid red; */
   display: grid;
   gap: var(--grid-gap);
   grid-template-columns: 1fr 0.5fr 1fr;
@@ -125,17 +133,20 @@ nav ul a {
 
 .skills-card {
   grid-area: skills;
-  background-color: #d1e9ea;
   background-image: linear-gradient(120deg, #f0f08d, var(--card-color));
+  padding: 1rem;
 }
 
 .skills-wrapper {
   /* border: 2px solid black; */
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.skills-title {
+  padding: 1rem;
 }
 
 .skills {
@@ -183,14 +194,15 @@ nav ul a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem;
-  /* border: 2px solid red; */
+  padding: 1.5rem;
   position: relative;
-  min-height: 300px;
+  min-height: 250px;
+
+  /* border: 2px solid red; */
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -206,4 +218,11 @@ nav ul a {
   position: absolute;
   right: -1rem;
   top: 2rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
 }
