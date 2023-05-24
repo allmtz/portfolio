@@ -7,6 +7,8 @@
   --card-border-radius: 20px;
   /* --card-color: #ebeaeae6; */
   --card-color: whitesmoke;
+  --github-purple:#6e5494;
+  --linkedin-blue:#0077b5;
 }
 
 html {
@@ -140,8 +142,24 @@ nav ul a {
   background-color: white;
   height: 40px;
   width: 40px;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 100px;
+}
+
+ .github, .linkedin{
+  fill: black;
+}
+
+.github:hover,.linkedin:hover{
+  fill: white;
+}
+
+.github:hover{
+  background-color: var(--github-purple);
+}
+
+.linkedin:hover{
+  background-color: var(--linkedin-blue);
 }
 
 .avatar {

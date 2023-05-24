@@ -19,3 +19,7 @@
     - look into improving image quality
 
 * add breakpointss
+
+* for social icons:
+    - turned each SVG into a component ==> commented out the inline `fill` styling to be able to 
+    style the SVG with CSS

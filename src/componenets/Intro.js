@@ -1,6 +1,8 @@
 // social icons
-import linkedIn from "../social-icons/linkedin.svg";
-import github from "../social-icons/github.svg";
+
+import { Github } from "./Github";
+import Linkedin from "./Linkedin";
+import SocialLink from "./SocialLink";
 
 export const Intro = () => {
   return (
@@ -16,16 +18,15 @@ export const Intro = () => {
         </div>
         <section className="contact-banner">
           <button>Contact</button>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/allan-martinez-ab8848252/"
+          <SocialLink link={"https://github.com/allmtz"} alt={"github"}>
+            <Github className="social github"></Github>
+          </SocialLink>
+          <SocialLink
+            link={"https://www.linkedin.com/in/allan-martinez-ab8848252/"}
+            alt={"linkedin"}
           >
-            <img className="social" src={linkedIn} alt="linkedin" />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://github.com/allmtz">
-            <img className="social" src={github} alt="github" />
-          </a>
+            <Linkedin className="social linkedin"></Linkedin>
+          </SocialLink>
         </section>
       </div>
     </div>
