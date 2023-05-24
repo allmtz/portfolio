@@ -1,6 +1,7 @@
 :root {
   --header-font-size: 3rem;
-  --accent-color: #3eb99f;
+  --main-color: #78d8e0;
+  --accent-color: #f0f08d;
   --bg-color: #0a192f;
   --grid-gap: 1rem;
   --card-pad: 1rem;
@@ -79,6 +80,11 @@ nav ul a {
   color: black;
 }
 
+nav ul a:hover {
+  text-decoration: none;
+  opacity: .6;
+}
+
 .online-container{
   display: flex;
   gap: .3rem;
@@ -132,10 +138,17 @@ nav ul a {
   border-radius: 50px;
   background-color: black;
   color: white;
+  font-size: 1rem;
+  transition-duration: .7s;
+
 }
 
 .contact-banner button:hover {
   opacity: 0.8;
+  background-color: white;
+  color:black;
+  box-shadow: inset -200px  0 0 0 white;
+
 }
 
 .social {
