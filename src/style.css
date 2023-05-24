@@ -54,7 +54,7 @@ img {
   grid-template-rows: 50px 100px 150px;
   grid-template-areas:
     "intro  avatar location"
-    "intro  avatar skills"
+    "intro  avatar  skills"
     "intro  avatar skills";
 }
 
@@ -175,11 +175,6 @@ nav ul a:hover {
   background-color: var(--linkedin-blue);
 }
 
-.avatar {
-  /* border: 2px solid black; */
-  text-align: center;
-}
-
 .skills-card {
   grid-area: skills;
   background-image: linear-gradient(120deg, #f0f08d, var(--card-color));
@@ -220,7 +215,7 @@ nav ul a:hover {
 
 .avatar-card {
   grid-area: avatar;
-  background-color: #202020;
+  background-color: var(--card-color);
 }
 
 .location-card {
