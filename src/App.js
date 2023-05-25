@@ -1,17 +1,22 @@
 import "./style.css";
+// react-grid-layout
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
+import { Responsive, WidthProvider } from "react-grid-layout";
+// framer motion
+import { motion } from "framer-motion";
+// components
 import { NavBar } from "./componenets/Navbar";
 import { Layout } from "./componenets/Layout";
 import { Grid } from "./componenets/Grid";
 import { ProjectGrid } from "./componenets/ProjectGrid";
-
 import { Intro } from "./componenets/Intro";
 import { Location } from "./componenets/Location";
 import { Skills } from "./componenets/Skills";
 import { Projects } from "./componenets/Projects";
 import { Avatar } from "./componenets/Avatar";
 
-import { motion } from "framer-motion";
-import { useEffect } from "react";
+const ResponsiveGridLayout = WidthProvider(Responsive);
 
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
@@ -21,9 +26,14 @@ window.addEventListener("resize", (e) => {
   return;
 });
 
-function App() {
-  useEffect(() => {}, []);
+const layout = [
+  { i: "1", x: 0, y: 0, w: 4, h: 5 },
+  { i: "2", x: 4, y: 0, w: 2, h: 5 },
+  { i: "3", x: 6, y: 0, w: 4, h: 1 },
+  { i: "4", x: 6, y: 0, w: 4, h: 4 },
+];
 
+function App() {
   return (
     <Layout>
       <motion.div
@@ -33,6 +43,30 @@ function App() {
       >
         <NavBar></NavBar>
       </motion.div>
+
+      <ResponsiveGridLayout
+        className="layout rgl "
+        layouts={{ md: layout }}
+        breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+        cols={{ lg: 10, md: 10, sm: 1, xs: 1, xxs: 1 }}
+        isResizable={false}
+        allowOverlap={false}
+        compactType={"vertical"}
+        rowHeight={50}
+      >
+        <div className="rgl-item " key="1">
+          1
+        </div>
+        <div className="rgl-item " key="2">
+          2
+        </div>
+        <div className="rgl-item  " key="3">
+          3
+        </div>
+        <div className="rgl-item  " key="4">
+          4
+        </div>
+      </ResponsiveGridLayout>
 
       <Grid>
         <motion.div

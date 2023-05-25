@@ -280,3 +280,12 @@ nav ul a:hover {
   align-items: center;
   margin-top: 2rem;
 }
+
+.rgl {
+  color: black;
+  border: 2px solid red;
+}
+
+.rgl-item {
+  border: 2px solid black;
+}
