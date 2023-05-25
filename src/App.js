@@ -27,10 +27,10 @@ window.addEventListener("resize", (e) => {
 });
 
 const layout = [
-  { i: "1", x: 0, y: 0, w: 4, h: 5 },
-  { i: "2", x: 4, y: 0, w: 2, h: 5 },
-  { i: "3", x: 6, y: 0, w: 4, h: 1 },
-  { i: "4", x: 6, y: 0, w: 4, h: 4 },
+  { i: "intro", x: 0, y: 0, w: 4, h: 5 },
+  { i: "avatar", x: 4, y: 0, w: 2, h: 5 },
+  { i: "location", x: 6, y: 0, w: 4, h: 1 },
+  { i: "skills", x: 6, y: 0, w: 4, h: 4 },
 ];
 
 function App() {
@@ -54,40 +54,22 @@ function App() {
         compactType={"vertical"}
         rowHeight={50}
       >
-        <div className="rgl-item " key="1">
-          1
-        </div>
-        <div className="rgl-item " key="2">
-          2
-        </div>
-        <div className="rgl-item  " key="3">
-          3
-        </div>
-        <div className="rgl-item  " key="4">
-          4
-        </div>
-      </ResponsiveGridLayout>
-
-      <Grid>
         <motion.div
           className="card intro-card"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ type: "tween", duration: 1.5, delay: 1.5 }}
+          key="intro"
         >
           <Intro></Intro>
         </motion.div>
 
         <motion.div
           className="card avatar-card"
-          animate={{ y: 0 }}
-          initial={{ y: -1000 }}
-          transition={{
-            type: "spring",
-            duration: 3,
-            delay: 4.3,
-            stiffness: 35,
-          }}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ type: "tween", duration: 1.5, delay: 4.5 }}
+          key="avatar"
         >
           <Avatar></Avatar>
         </motion.div>
@@ -97,6 +79,7 @@ function App() {
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ type: "tween", duration: 1, delay: 2.5 }}
+          key="location"
         >
           <Location></Location>
         </motion.div>
@@ -107,10 +90,11 @@ function App() {
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ type: "tween", duration: 1, delay: 2.5 }}
+          key="skills"
         >
           <Skills></Skills>
         </motion.div>
-      </Grid>
+      </ResponsiveGridLayout>
 
       <motion.div
         animate={{ opacity: 1 }}
