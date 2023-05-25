@@ -217,6 +217,13 @@ nav ul a:hover {
 .avatar-card {
   grid-area: avatar;
   background-color: var(--card-color);
+  display: flex;
+  justify-content: center;
+}
+
+.avatar{
+  height: 300px;
+  margin-top: 45px;
 }
 
 .location-card {

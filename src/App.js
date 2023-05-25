@@ -39,9 +39,9 @@ function App() {
       <Grid>
         <motion.div
           className="card intro-card"
-          animate={{ x: 0 }}
-          initial={{ x: -1000 }}
-          transition={{ type: "tween", duration: 1.5, delay: 1 }}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ type: "tween", duration: 1.5, delay: 1.5 }}
         >
           <Intro></Intro>
         </motion.div>
@@ -51,9 +51,10 @@ function App() {
           animate={{ y: 0 }}
           initial={{ y: -1000 }}
           transition={{
-            type: "tween",
-            duration: 1,
-            delay: 3,
+            type: "spring",
+            duration: 3,
+            delay: 4.3,
+            stiffness: 35,
           }}
         >
           <Avatar></Avatar>
@@ -61,27 +62,27 @@ function App() {
 
         <motion.div
           className="card location-card"
-          animate={{ x: 0 }}
-          initial={{ x: 500 }}
-          transition={{ type: "tween", duration: 0.9, delay: 1.5 }}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ type: "tween", duration: 1, delay: 2.5 }}
         >
           <Location></Location>
         </motion.div>
 
         <motion.div
           className="card skills-card"
-          animate={{ x: 0 }}
-          initial={{ x: 500 }}
-          transition={{ type: "tween", duration: 0.9, delay: 1.5 }}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ type: "tween", duration: 1, delay: 2.5 }}
         >
           <Skills></Skills>
         </motion.div>
       </Grid>
 
       <motion.div
-        animate={{ scale: 1 }}
-        initial={{ scale: 0 }}
-        transition={{ type: "tween", duration: 0.8, delay: 2.5 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ type: "tween", duration: 1, delay: 3.5 }}
       >
         <ProjectGrid>
           <Projects></Projects>

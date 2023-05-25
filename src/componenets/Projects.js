@@ -62,7 +62,7 @@ export const Projects = () => {
       <Project
         title={"Hotkey Checker"}
         desc={
-          "A tool that allows developers to quickly find reserved hotkeys for various browsers"
+          "A tool that allows developers to quickly find reserved hotkeys for various browsers."
         }
         imageSrc={hk}
         github={"https://github.com/allmtz/hotkey-checker"}
@@ -74,7 +74,7 @@ export const Projects = () => {
       <Project
         title={"Pomodoro"}
         desc={
-          "A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining"
+          "A pomodoro style productivity timer. The font and color are customizable and the progress bar provides a quick visual of the time remaining."
         }
         imageSrc={pomodoro}
         github={"https://github.com/allmtz/Pomodoro-App"}
