@@ -10,6 +10,9 @@ import { Skills } from "./componenets/Skills";
 import { Projects } from "./componenets/Projects";
 import { Avatar } from "./componenets/Avatar";
 
+import { motion } from "framer-motion";
+import { useEffect } from "react";
+
 // resets/closes the mobile dropdown everytime the window is resized past the breakpoint
 window.addEventListener("resize", (e) => {
   if (e.target.innerWidth > 755)
@@ -19,18 +22,71 @@ window.addEventListener("resize", (e) => {
 });
 
 function App() {
+  useEffect(() => {}, []);
+
+  const dur = 1.5;
+
   return (
     <Layout>
-      <NavBar></NavBar>
+      <motion.div
+        animate={{ y: 0 }}
+        initial={{ y: -100 }}
+        transition={{ type: "tween", duration: 1 }}
+      >
+        <NavBar></NavBar>
+      </motion.div>
+
       <Grid>
-        <Intro></Intro>
-        <Avatar></Avatar>
-        <Location></Location>
-        <Skills></Skills>
+        <motion.div
+          className="card intro-card"
+          animate={{ x: 0 }}
+          initial={{ x: -1000 }}
+          transition={{ type: "tween", duration: 1.5, delay: 1 }}
+        >
+          <Intro></Intro>
+        </motion.div>
+
+        <motion.div
+          className="card avatar-card"
+          animate={{ y: 0 }}
+          initial={{ y: -1000 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 3,
+          }}
+        >
+          <Avatar></Avatar>
+        </motion.div>
+
+        <motion.div
+          className="card location-card"
+          animate={{ x: 0 }}
+          initial={{ x: 500 }}
+          transition={{ type: "tween", duration: 0.9, delay: 1.5 }}
+        >
+          <Location></Location>
+        </motion.div>
+
+        <motion.div
+          className="card skills-card"
+          animate={{ x: 0 }}
+          initial={{ x: 500 }}
+          transition={{ type: "tween", duration: 0.9, delay: 1.5 }}
+        >
+          <Skills></Skills>
+        </motion.div>
       </Grid>
-      <ProjectGrid>
-        <Projects></Projects>
-      </ProjectGrid>
+
+      <motion.div
+        animate={{ scale: 1 }}
+        initial={{ scale: 0 }}
+        transition={{ type: "tween", duration: 0.8, delay: 2.5 }}
+      >
+        <ProjectGrid>
+          <Projects></Projects>
+        </ProjectGrid>
+      </motion.div>
     </Layout>
   );
 }
