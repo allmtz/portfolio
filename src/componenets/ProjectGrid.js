@@ -1,3 +1,8 @@
 export const ProjectGrid = ({ children }) => {
-  return <div className="project-grid"> {children}</div>;
+  return (
+    <div id="projects" className="project-grid">
+      {" "}
+      {children}
+    </div>
+  );
 };

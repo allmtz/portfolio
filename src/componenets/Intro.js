@@ -7,7 +7,7 @@ import SocialLink from "./SocialLink";
 export const Intro = () => {
   return (
     // <div className="card intro-card">
-    <div className="intro">
+    <div className="intro" id="about">
       <div>
         <h1>Hello, I'm Allan, a freelance web-developer</h1>
         <p>

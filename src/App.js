@@ -24,8 +24,6 @@ window.addEventListener("resize", (e) => {
 function App() {
   useEffect(() => {}, []);
 
-  const dur = 1.5;
-
   return (
     <Layout>
       <motion.div
@@ -71,6 +69,7 @@ function App() {
 
         <motion.div
           className="card skills-card"
+          id="skills"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ type: "tween", duration: 1, delay: 2.5 }}

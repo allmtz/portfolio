@@ -52,11 +52,11 @@ img {
   display: grid;
   gap: var(--grid-gap);
   grid-template-columns: 1fr 0.5fr 1fr;
-  grid-template-rows: 50px 100px 150px;
+  grid-template-rows: 150px 100px 50px;
   grid-template-areas:
-    "intro  avatar location"
+    "intro  avatar skills"
     "intro  avatar  skills"
-    "intro  avatar skills";
+    "intro  avatar location";
 }
 
 nav {
