@@ -253,8 +253,13 @@ nav ul a:hover {
   /* border: 2px solid red; */
 }
 
+.project-info{
+  display: flex;
+  gap: 5rem;
+}
+
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -267,9 +272,7 @@ nav ul a:hover {
   justify-self: flex-end;
   height: 300px;
   width: 300px;
-  position: absolute;
-  right: -1rem;
-  top: 2rem;
+  margin-right: -5rem;
 }
 
 .project-links {

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Project({
   title,
   desc,
@@ -17,16 +19,18 @@ function Project({
           backgroundColor: `${bgColor}`,
         }}
       >
-        <div>
-          <p className="project-title"> {title}</p>
-          <p className="project-desc">{desc}</p>
-        </div>
-        <img
-          className="project-image"
-          src={imageSrc}
-          alt="landing page"
-          style={{ objectPosition: `${imgPosition}` }}
-        />
+        <motion.div className="project-info" whileHover={{ scale: 1.05 }}>
+          <div>
+            <p className="project-title"> {title}</p>
+            <p className="project-desc">{desc}</p>
+          </div>
+          <img
+            className="project-image"
+            src={imageSrc}
+            alt="landing page"
+            style={{ objectPosition: `${imgPosition}` }}
+          />
+        </motion.div>
       </div>
     </a>
   );
