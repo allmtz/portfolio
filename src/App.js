@@ -127,6 +127,7 @@ function App() {
             bgColor={"whitesmoke"}
             txtColor={"black"}
             imgPosition={"left"}
+            arrowColor={"black"}
           />
         </div>
         <div key="movie">
@@ -141,11 +142,12 @@ function App() {
             bgColor={"#0a192f"}
             txtColor={"whitesmoke"}
             imgPosition={"left"}
+            arrowColor={"white"}
           />
         </div>
         <div key="kanban">
           <Project
-            title={"Kanban Task Tracker"}
+            title={"Kanban Board"}
             desc={
               "This Kanban task tracker is a fully responsive React application and includes a light/dark toggle."
             }
@@ -155,6 +157,7 @@ function App() {
             bgColor={"#202020"}
             txtColor={"white"}
             imgPosition={"left"}
+            arrowColor={"white"}
           />
         </div>
         <div key="gallery">
@@ -169,6 +172,7 @@ function App() {
             bgColor={"whitesmoke"}
             txtColor={"black"}
             imgPosition={"left"}
+            arrowColor={"black"}
           />
         </div>
         <div key="hk">
@@ -183,6 +187,7 @@ function App() {
             bgColor={"whitesmoke"}
             txtColor={"black"}
             imgPosition={"center"}
+            arrowColor={"black"}
           />
         </div>
         <div key="pomo">
@@ -197,6 +202,7 @@ function App() {
             bgColor={"#120c2c"}
             txtColor={"white"}
             imgPosition={"center"}
+            arrowColor={"white"}
           />
         </div>
       </ResponsiveGridLayout>

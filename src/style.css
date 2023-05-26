@@ -241,43 +241,40 @@ nav ul li {
 }
 
 .project-card {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1.5rem;
-  position: relative;
+  padding: var(--card-pad);
   height: 250px;
-
-  /* border: 2px solid red; */
 }
 
-.project-info {
+.project-contents {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .project-title {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .project-desc {
   max-width: 220px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .project-image {
-  justify-self: flex-end;
   height: 300px;
   width: 300px;
-  margin-right: -5rem;
+  margin-right: -2rem;
 }
 
-.project-links {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 2rem;
+.project-link {
+  /* this has an inline border style in <Project>  */
+  border-radius: 100%;
+}
+
+.project-link:hover {
+  background-color: var(--main-color);
 }
 
 .rgl {
