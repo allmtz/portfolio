@@ -32,17 +32,21 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 function App() {
   const [layout, setLayout] = useState(defaultLayout);
+  const [currentFocus, setCurrentFocus] = useState("home");
 
   function focusProjects() {
     setLayout(projectsLayout);
+    setCurrentFocus("projects");
   }
 
   function focusDefault() {
     setLayout(defaultLayout);
+    setCurrentFocus("home");
   }
 
   function focusSkills() {
     setLayout(skillsLayout);
+    setCurrentFocus("skills");
   }
 
   return (
@@ -56,6 +60,7 @@ function App() {
           focusDefault={focusDefault}
           focusProjects={focusProjects}
           focusSkills={focusSkills}
+          currentFocus={currentFocus}
         ></NavBar>
       </motion.div>
 

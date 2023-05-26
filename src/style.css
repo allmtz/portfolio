@@ -60,7 +60,6 @@ img {
 }
 
 nav {
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -73,17 +72,14 @@ nav ul {
   gap: 2rem;
   list-style: none;
   padding-right: 1rem;
+}
+
+nav ul li {
   cursor: pointer;
 }
 
-nav ul a {
-  text-decoration: none;
-  color: black;
-}
-
-nav ul a:hover {
-  text-decoration: none;
-  opacity: 0.6;
+.focused {
+  border-bottom: 2px solid var(--main-color);
 }
 
 .online-container {
@@ -286,7 +282,7 @@ nav ul a:hover {
 
 .rgl {
   color: black;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .rgl-item {
