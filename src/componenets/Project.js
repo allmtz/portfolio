@@ -11,7 +11,12 @@ function Project({
   txtColor,
 }) {
   return (
-    <a href={demo} target="_blank" rel="noreferrer">
+    // <a href={demo} target="_blank" rel="noreferrer">
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ type: "tween", duration: 1, delay: 3.5 }}
+    >
       <div
         className="card project-card"
         style={{
@@ -32,7 +37,8 @@ function Project({
           />
         </motion.div>
       </div>
-    </a>
+    </motion.div>
+    // </a>
   );
 }
 
