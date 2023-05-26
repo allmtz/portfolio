@@ -1,4 +1,4 @@
-function NavBar() {
+function NavBar({ focusDefault, focusProjects, focusSkills }) {
   return (
     <nav>
       <div className="online-container">
@@ -6,15 +6,10 @@ function NavBar() {
         <p>online</p>
       </div>
       <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
+        <li onClick={focusDefault}>Home</li>
+
+        <li onClick={focusProjects}>Projects</li>
+        <li onClick={focusSkills}>Skills</li>
       </ul>
     </nav>
   );

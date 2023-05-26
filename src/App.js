@@ -1,8 +1,11 @@
 import "./style.css";
+import { useState } from "react";
 // react-grid-layout
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import { Responsive, WidthProvider } from "react-grid-layout";
+// layouts for RGL
+import { defaultLayout, projectsLayout, skillsLayout } from "./rgl-layouts";
 // framer motion
 import { motion } from "framer-motion";
 // components
@@ -27,34 +30,21 @@ import hk from "./project-images/hk.png";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
-// resets/closes the mobile dropdown everytime the window is resized past the breakpoint
-window.addEventListener("resize", (e) => {
-  if (e.target.innerWidth > 755)
-    document.querySelector("nav ul").classList.remove("show-nav");
-
-  return;
-});
-
-const projectCardHeight = 10;
-const projectCardWidth = 5;
-
-const layout = [
-  { i: "intro", x: 0, y: 0, w: 4, h: 13 },
-  { i: "avatar", x: 4, y: 0, w: 2, h: 13 },
-  { i: "location", x: 6, y: 0, w: 4, h: 2 },
-  { i: "skills", x: 6, y: 0, w: 4, h: 11 },
-
-  { i: "scoot", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
-  { i: "movie", x: 5, y: 5, w: projectCardWidth, h: projectCardHeight },
-
-  { i: "kanban", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
-  { i: "gallery", x: 5, y: 5, w: projectCardWidth, h: projectCardHeight },
-
-  { i: "hk", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
-  { i: "pomo", x: 5, y: 5, w: projectCardWidth, h: projectCardHeight },
-];
-
 function App() {
+  const [layout, setLayout] = useState(defaultLayout);
+
+  function focusProjects() {
+    setLayout(projectsLayout);
+  }
+
+  function focusDefault() {
+    setLayout(defaultLayout);
+  }
+
+  function focusSkills() {
+    setLayout(skillsLayout);
+  }
+
   return (
     <Layout>
       <motion.div
@@ -62,7 +52,11 @@ function App() {
         initial={{ y: -100 }}
         transition={{ type: "tween", duration: 1 }}
       >
-        <NavBar></NavBar>
+        <NavBar
+          focusDefault={focusDefault}
+          focusProjects={focusProjects}
+          focusSkills={focusSkills}
+        ></NavBar>
       </motion.div>
 
       <ResponsiveGridLayout
