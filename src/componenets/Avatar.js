@@ -2,8 +2,9 @@ import avatar from "../avatar/avatar.png";
 
 export const Avatar = () => {
   return (
-    // <div className="card avatar-card">
-    <img className="avatar" src={avatar} alt="" />
-    // </div>
+    <>
+      <button className="avatar-contact-btn">Contact</button>
+      <img className="avatar" src={avatar} alt="" />
+    </>
   );
 };
