@@ -1,5 +1,5 @@
 import "./style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // react-grid-layout
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
@@ -29,10 +29,26 @@ import pomodoro from "./project-images/pomodoro.png";
 import hk from "./project-images/hk.png";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
+const draggableCutoff = 768;
 
 function App() {
+  useEffect(() => {
+    const determineCanDrag = () => {
+      window.addEventListener("resize", () => {
+        window.innerWidth < draggableCutoff
+          ? setCanDrag(false)
+          : setCanDrag(true);
+      });
+    };
+
+    return determineCanDrag;
+  }, []);
+
   const [layout, setLayout] = useState(defaultLayout);
   const [currentFocus, setCurrentFocus] = useState("home");
+  const [canDrag, setCanDrag] = useState(() =>
+    window.innerWidth < draggableCutoff ? false : true
+  );
 
   function focusProjects() {
     setLayout(projectsLayout);
@@ -73,6 +89,7 @@ function App() {
         allowOverlap={false}
         compactType={"vertical"}
         rowHeight={16}
+        isDraggable={canDrag}
       >
         <motion.div
           className="card intro-card"
