@@ -14,7 +14,6 @@ import mysql from "../skills-icons/mysql.svg";
 
 export const Skills = () => {
   return (
-    // <div className="card skills-card">
     <section className="skills-wrapper">
       <h2 className="skills-title">Skills</h2>
       <div className="skills">
@@ -32,6 +31,5 @@ export const Skills = () => {
         <img src={mysql} alt="mysql" />
       </div>
     </section>
-    // </div>
   );
 };

@@ -16,7 +16,6 @@ import { Location } from "./componenets/Location";
 import { Skills } from "./componenets/Skills";
 import { Avatar } from "./componenets/Avatar";
 import { Project } from "./componenets/Project";
-
 // project images
 import scoot from "./project-images/scoot.png";
 import movieApp from "./project-images/entertainment-app.png";
@@ -78,7 +77,7 @@ function App() {
       </motion.div>
 
       <ResponsiveGridLayout
-        className="layout rgl "
+        className="layout rgl"
         layouts={{ md: layout }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ lg: 10, md: 10, sm: 1, xs: 1, xxs: 1 }}
