@@ -1,9 +1,10 @@
+import { ContactBtn } from "./ContactBtn";
 import avatar from "../avatar/avatar.png";
 
 export const Avatar = () => {
   return (
     <>
-      <button className="avatar-contact-btn">Contact</button>
+      <ContactBtn cardName={"avatar"}></ContactBtn>
       <img className="avatar" src={avatar} alt="" />
     </>
   );

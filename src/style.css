@@ -131,8 +131,7 @@ nav ul li {
   margin-top: 1rem;
 }
 
-.intro-contact-btn,
-.avatar-contact-btn {
+.contact-btn {
   cursor: pointer;
   border: none;
   padding: 1rem 3.5rem;
@@ -143,15 +142,15 @@ nav ul li {
   transition-duration: 0.7s;
 }
 
-.avatar-contact-btn {
-  display: none;
-}
-
-.contact-banner button:hover {
+.contact-btn:hover {
   opacity: 0.8;
   background-color: white;
   color: black;
   box-shadow: inset -200px 0 0 0 white;
+}
+
+.avatar-contact-btn {
+  display: none;
 }
 
 .social-container {

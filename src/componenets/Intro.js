@@ -1,8 +1,8 @@
+import { ContactBtn } from "./ContactBtn";
+import { SocialLink } from "./SocialLink";
 // social icons
-
 import { Github } from "./Github";
-import Linkedin from "./Linkedin";
-import SocialLink from "./SocialLink";
+import { Linkedin } from "./Linkedin";
 
 export const Intro = () => {
   return (
@@ -17,7 +17,7 @@ export const Intro = () => {
         </p>
       </div>
       <section className="contact-banner">
-        <button className="intro-contact-btn">Contact</button>
+        <ContactBtn cardName={"intro"}></ContactBtn>
         <div className="social-container">
           <SocialLink link={"https://github.com/allmtz"} alt={"github"}>
             <Github className="social github"></Github>

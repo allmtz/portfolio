@@ -1,4 +1,4 @@
-const Linkedin = ({ className }) => {
+export const Linkedin = ({ className }) => {
   return (
     <>
       {/* <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
@@ -18,5 +18,3 @@ const Linkedin = ({ className }) => {
     </>
   );
 };
-
-export default Linkedin;
