@@ -6,8 +6,7 @@ import { Linkedin } from "./Linkedin";
 
 export const Intro = () => {
   return (
-    // <div className="card intro-card">
-    <div className="intro" id="about">
+    <div className="intro">
       <div>
         <h1>Hello, I'm Allan, a freelance web-developer</h1>
         <p>
@@ -31,6 +30,5 @@ export const Intro = () => {
         </div>
       </section>
     </div>
-    // </div>
   );
 };

@@ -49,17 +49,6 @@ img {
   overflow: hidden;
 }
 
-.grid {
-  display: grid;
-  gap: var(--grid-gap);
-  grid-template-columns: 1fr 0.5fr 1fr;
-  grid-template-rows: 150px 100px 50px;
-  grid-template-areas:
-    "intro  avatar skills"
-    "intro  avatar  skills"
-    "intro  avatar location";
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -185,7 +174,6 @@ nav ul li {
 }
 
 .skills-card {
-  grid-area: skills;
   background-image: linear-gradient(120deg, #f0f08d, var(--card-color));
   padding: 1rem;
 }
@@ -216,14 +204,7 @@ nav ul li {
   border-radius: 100%;
 }
 
-/* //////////// */
-
-.intro-card {
-  grid-area: intro;
-}
-
 .avatar-card {
-  grid-area: avatar;
   background-color: var(--card-color);
   display: flex;
   justify-content: center;
@@ -236,11 +217,9 @@ nav ul li {
 }
 
 .location-card {
-  grid-area: location;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-weight: bold; */
   font-size: 1.1rem;
 }
 

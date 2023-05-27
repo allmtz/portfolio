@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 // components
 import { NavBar } from "./componenets/Navbar";
 import { Layout } from "./componenets/Layout";
-import { Grid } from "./componenets/Grid";
 import { ProjectGrid } from "./componenets/ProjectGrid";
 import { Intro } from "./componenets/Intro";
 import { Location } from "./componenets/Location";
@@ -92,7 +91,7 @@ function App() {
         isDraggable={canDrag}
       >
         <motion.div
-          className="card intro-card"
+          className="card"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ type: "tween", duration: 1.5, delay: 1.5 }}
