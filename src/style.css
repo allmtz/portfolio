@@ -223,13 +223,6 @@ nav ul li {
   font-size: 1.1rem;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 1rem;
-  gap: var(--grid-gap);
-}
-
 .project-card {
   padding: var(--card-pad);
   height: 250px;

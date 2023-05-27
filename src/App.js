@@ -11,11 +11,9 @@ import { motion } from "framer-motion";
 // components
 import { NavBar } from "./componenets/Navbar";
 import { Layout } from "./componenets/Layout";
-import { ProjectGrid } from "./componenets/ProjectGrid";
 import { Intro } from "./componenets/Intro";
 import { Location } from "./componenets/Location";
 import { Skills } from "./componenets/Skills";
-import { Projects } from "./componenets/Projects";
 import { Avatar } from "./componenets/Avatar";
 import { Project } from "./componenets/Project";
 
