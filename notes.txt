@@ -27,8 +27,7 @@
 * DONE look at responsiveness
     - turn off RGL for screens smaller than tablet
 * DONE add contact button functionality
+* DONE change rgl placeholder color
 
-* change rgl placeholder color
 * open PR for RGL docs
 * choose a font
-* sticking with these colors?

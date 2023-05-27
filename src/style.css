@@ -270,6 +270,10 @@ nav ul li {
   border: 2px solid black;
 }
 
+.react-grid-placeholder {
+  background-color: var(--main-color) !important;
+}
+
 @media screen and (max-width: 550px) {
   nav {
     justify-content: center;

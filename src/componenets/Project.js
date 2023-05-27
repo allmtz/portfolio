@@ -32,6 +32,7 @@ function Project({
                 className="project-link"
                 href={demo}
                 target="_blank"
+                rel="noreferrer"
                 style={{ border: `2px solid ${arrowColor}` }}
               >
                 <NEarrow color={arrowColor}></NEarrow>
