@@ -1,0 +1,33 @@
+* for social icons:
+    - turned each SVG into a component ==> commented out the inline `fill` styling to be able to 
+    style the SVG with CSS
+
+* for RGL, to use a custom component as a child of <RGL>, wrap the <comp> in a <div>
+    - https://github.com/react-grid-layout/react-grid-layout/issues/576
+
+
+ //////// TODO ////////
+
+* DONE hover effects
+    - nav bar
+    - social icons
+    - projects?
+* DONE finish styling
+    * <Project>
+        - github and demo links
+    * <Skills>
+        - add the rest of the skills
+* DONE avatar
+* add the rest of the Projects
+    - look into improving image quality
+* DONE add breakpoints
+* DONE add project links
+* DONE highlight navbar depending on layout state
+* adjust fade in timings?
+* DONE look at responsiveness
+    - turn off RGL for screens smaller than tablet
+* DONE add contact button functionality
+* DONE change rgl placeholder color
+
+* open PR for RGL docs
+* choose a font
