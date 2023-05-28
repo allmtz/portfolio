@@ -11,6 +11,7 @@ import nextJS from "../skills-icons/next-js.svg";
 import github from "../skills-icons/github.svg";
 import nodejs from "../skills-icons/nodejs.svg";
 import mysql from "../skills-icons/mysql.svg";
+import figma from "../skills-icons/figma.svg";
 
 export const Skills = () => {
   return (
@@ -18,17 +19,18 @@ export const Skills = () => {
       <h2 className="skills-title">Skills</h2>
       <div className="skills">
         <img src={js} alt="javascript" />
+        <img src={typescript} alt="typescript" />
+        <img src={react} alt="react" />
         <img src={html} alt="html" />
         <img src={css} alt="css" />
-        <img src={firebase} alt="firebase" />
-        <img src={react} alt="react" />
-        <img src={typescript} alt="typescript" />
         <img src={tailwindcss} alt="tailwindCSS" />
         <img src={sass} alt="sass" />
         <img src={nextJS} alt="nextJS" />
         <img src={github} alt="github" />
         <img src={nodejs} alt="nodeJS" />
+        <img src={firebase} alt="firebase" />
         <img src={mysql} alt="mysql" />
+        <img src={figma} alt="figma" />
       </div>
     </section>
   );
