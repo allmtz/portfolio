@@ -10,7 +10,7 @@ export const Intro = () => {
       <div>
         <h1>Hello, I'm Allan, a front-end developer</h1>
         <p>
-          I'm a fast learning web enthusiast who loves conquering new
+          I'm a fast-learning web enthusiast who loves conquering new
           challenges. With a focus on quality, I can deliver custom
           web-applications that stand out.
         </p>
