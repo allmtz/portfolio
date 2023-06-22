@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import NEarrow from "./NEarrow";
+import { timing } from "../App";
 
 function Project({
   title,
@@ -16,7 +17,11 @@ function Project({
     <motion.div
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
-      transition={{ type: "tween", duration: 1, delay: 3.5 }}
+      transition={{
+        type: "tween",
+        duration: timing.project.duration,
+        delay: timing.project.delay,
+      }}
     >
       <div
         className="card project-card"

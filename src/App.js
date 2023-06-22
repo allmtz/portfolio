@@ -24,6 +24,34 @@ import kanban from "./project-images/task-tracker.png";
 import pomodoro from "./project-images/pomodoro.png";
 import hk from "./project-images/hk.png";
 
+const totalAnimationDuration = 5;
+
+export const timing = {
+  nav: {
+    duration: 0.17 * totalAnimationDuration,
+  },
+  intro: {
+    duration: 0.25 * totalAnimationDuration,
+    delay: 0.25 * totalAnimationDuration,
+  },
+  avatar: {
+    duration: 0.25 * totalAnimationDuration,
+    delay: 0.75 * totalAnimationDuration,
+  },
+  location: {
+    duration: 0.17 * totalAnimationDuration,
+    delay: 0.42 * totalAnimationDuration,
+  },
+  skills: {
+    duration: 0.17 * totalAnimationDuration,
+    delay: 0.42 * totalAnimationDuration,
+  },
+  project: {
+    duration: 0.17 * totalAnimationDuration,
+    delay: 0.58 * totalAnimationDuration,
+  },
+};
+
 const ResponsiveGridLayout = WidthProvider(Responsive);
 const draggableCutoff = 768;
 
@@ -66,7 +94,7 @@ function App() {
       <motion.div
         animate={{ y: 0 }}
         initial={{ y: -100 }}
-        transition={{ type: "tween", duration: 1 }}
+        transition={{ type: "tween", duration: timing.nav.duration }}
       >
         <NavBar
           focusDefault={focusDefault}
@@ -91,7 +119,11 @@ function App() {
           className="card"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ type: "tween", duration: 1.5, delay: 1.5 }}
+          transition={{
+            type: "tween",
+            duration: timing.intro.duration,
+            delay: timing.intro.delay,
+          }}
           key="intro"
         >
           <Intro></Intro>
@@ -101,7 +133,11 @@ function App() {
           className="card avatar-card"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ type: "tween", duration: 1.5, delay: 4.5 }}
+          transition={{
+            type: "tween",
+            duration: timing.avatar.duration,
+            delay: timing.avatar.delay,
+          }}
           key="avatar"
         >
           <Avatar></Avatar>
@@ -111,7 +147,11 @@ function App() {
           className="card location-card"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ type: "tween", duration: 1, delay: 2.5 }}
+          transition={{
+            type: "tween",
+            duration: timing.location.duration,
+            delay: timing.location.delay,
+          }}
           key="location"
         >
           <Location></Location>
@@ -122,7 +162,11 @@ function App() {
           id="skills"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ type: "tween", duration: 1, delay: 2.5 }}
+          transition={{
+            type: "tween",
+            duration: timing.skills.duration,
+            delay: timing.skills.delay,
+          }}
           key="skills"
         >
           <Skills></Skills>
