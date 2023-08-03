@@ -23,6 +23,7 @@ import gallery from "./project-images/galleria-slideshow.png";
 import kanban from "./project-images/task-tracker.png";
 import pomodoro from "./project-images/pomodoro.png";
 import hk from "./project-images/hk.png";
+import fineLines from "./project-images/finelines.png";
 
 const totalAnimationDuration = 5;
 
@@ -105,7 +106,7 @@ function App() {
       </motion.div>
 
       <ResponsiveGridLayout
-        className="layout rgl"
+        className="rgl"
         layouts={{ md: layout }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ lg: 10, md: 10, sm: 1, xs: 1, xxs: 1 }}
@@ -128,7 +129,6 @@ function App() {
         >
           <Intro></Intro>
         </motion.div>
-
         <motion.div
           className="card avatar-card"
           animate={{ opacity: 1 }}
@@ -142,7 +142,6 @@ function App() {
         >
           <Avatar></Avatar>
         </motion.div>
-
         <motion.div
           className="card location-card"
           animate={{ opacity: 1 }}
@@ -156,7 +155,6 @@ function App() {
         >
           <Location></Location>
         </motion.div>
-
         <motion.div
           className="card skills-card"
           id="skills"
@@ -171,7 +169,6 @@ function App() {
         >
           <Skills></Skills>
         </motion.div>
-
         <div key="scoot">
           <Project
             title={"Scoot"}
@@ -258,6 +255,21 @@ function App() {
             demo={"https://majestic-cuchufli-f2af29.netlify.app/"}
             bgColor={"#120c2c"}
             txtColor={"white"}
+            imgPosition={"center"}
+            arrowColor={"white"}
+          />
+        </div>
+        <div key="finelines">
+          <Project
+            title={"Fine Lines"}
+            desc={
+              "Designed from scratch with a mobile-first approach, this buisness website caters to a local barbeshop. Integrated third-party APIs for a seamless booking experience."
+            }
+            imageSrc={fineLines}
+            github={"https://github.com/allmtz/finelines"}
+            demo={"jhttps://www.flbarber.com/"}
+            bgColor={"black"}
+            txtColor={"whitesmoke"}
             imgPosition={"center"}
             arrowColor={"white"}
           />

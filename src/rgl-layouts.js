@@ -15,6 +15,8 @@ export const defaultLayout = [
 
   { i: "hk", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
   { i: "pomo", x: 5, y: 5, w: projectCardWidth, h: projectCardHeight },
+
+  { i: "finelines", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
 ];
 
 export const projectsLayout = [
@@ -31,6 +33,8 @@ export const projectsLayout = [
 
   { i: "hk", x: 0, y: 0, w: projectCardWidth, h: projectCardHeight },
   { i: "pomo", x: 5, y: 0, w: projectCardWidth, h: projectCardHeight },
+
+  { i: "finelines", x: 0, y: 0, w: projectCardWidth, h: projectCardHeight },
 ];
 
 export const skillsLayout = [
@@ -47,9 +51,12 @@ export const skillsLayout = [
 
   { i: "hk", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
   { i: "pomo", x: 5, y: 5, w: projectCardWidth, h: projectCardHeight },
+
+  { i: "finelines", x: 0, y: 5, w: projectCardWidth, h: projectCardHeight },
 ];
 
 // skillsLayout alternative. <Location> spans the entire grid
+// NOTE: this layout does not include the fine lines project
 // [
 //   { i: "intro", x: 8, y: 1, w: 4, h: 13 },
 //   { i: "avatar", x: 4, y: 1, w: 2, h: 13 },
