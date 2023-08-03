@@ -21,17 +21,17 @@ function NEarrow({ color }) {
                 id="Right-2"
                 points="18.7 12.4 18.7 5.3 11.6 5.3"
                 stroke={color}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
               />
 
               <line
                 fill="none"
                 stroke={color}
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 x1="5.3"
                 x2="17.1"
                 y1="18.7"
