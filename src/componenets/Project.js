@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import NEarrow from "./NEarrow";
 import { timing } from "../App";
+import { logEvent } from "firebase/analytics";
+import { useContext } from "react";
+import { AnalyticsContext } from "..";
 
 function Project({
   title,
@@ -13,6 +16,8 @@ function Project({
   txtColor,
   arrowColor,
 }) {
+  const analytics = useContext(AnalyticsContext);
+
   return (
     <motion.div
       animate={{ opacity: 1 }}
@@ -39,6 +44,7 @@ function Project({
                 target="_blank"
                 rel="noreferrer"
                 style={{ border: `2px solid ${arrowColor}` }}
+                onClick={logEvent(analytics, `clicked-project-link-${title}`)}
               >
                 <NEarrow color={arrowColor}></NEarrow>
               </a>
