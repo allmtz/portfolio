@@ -1,5 +1,5 @@
 import "./style.css";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 // react-grid-layout
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
@@ -24,6 +24,9 @@ import kanban from "./project-images/task-tracker.png";
 import pomodoro from "./project-images/pomodoro.png";
 import hk from "./project-images/hk.png";
 import fineLines from "./project-images/finelines.png";
+// analytics
+import { logEvent } from "firebase/analytics";
+import { AnalyticsContext } from ".";
 
 const totalAnimationDuration = 5;
 
@@ -69,6 +72,8 @@ function App() {
     return determineCanDrag;
   }, []);
 
+  const analytics = useContext(AnalyticsContext);
+
   const [layout, setLayout] = useState(defaultLayout);
   const [currentFocus, setCurrentFocus] = useState("home");
   const [canDrag, setCanDrag] = useState(() =>
@@ -78,16 +83,19 @@ function App() {
   function focusProjects() {
     setLayout(projectsLayout);
     setCurrentFocus("projects");
+    logEvent(analytics, "clicked-nav-projects");
   }
 
   function focusDefault() {
     setLayout(defaultLayout);
     setCurrentFocus("home");
+    logEvent(analytics, "clicked-nav-home");
   }
 
   function focusSkills() {
     setLayout(skillsLayout);
     setCurrentFocus("skills");
+    logEvent(analytics, "clicked-nav-skills");
   }
 
   return (

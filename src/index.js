@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
@@ -24,9 +24,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+export const AnalyticsContext = createContext(analytics);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AnalyticsContext.Provider value={analytics}>
+      <App />
+    </AnalyticsContext.Provider>
   </React.StrictMode>
 );
