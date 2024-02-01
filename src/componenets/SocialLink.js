@@ -11,7 +11,7 @@ export const SocialLink = ({ children, link, alt }) => {
       target="_blank"
       rel="noreferrer"
       aria-label={`${alt} link`}
-      onClick={logEvent(analytics, `clicked-social-${alt}`)}
+      onClick={() => logEvent(analytics, `clicked-social-${alt}`)}
     >
       {children}
     </a>

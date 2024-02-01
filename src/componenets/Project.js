@@ -44,7 +44,9 @@ function Project({
                 target="_blank"
                 rel="noreferrer"
                 style={{ border: `2px solid ${arrowColor}` }}
-                onClick={logEvent(analytics, `clicked-project-link-${title}`)}
+                onClick={() =>
+                  logEvent(analytics, `clicked-project-link-${title}`)
+                }
               >
                 <NEarrow color={arrowColor}></NEarrow>
               </a>
