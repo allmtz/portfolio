@@ -275,7 +275,7 @@ function App() {
             }
             imageSrc={fineLines}
             github={"https://github.com/allmtz/finelines"}
-            demo={"jhttps://www.flbarber.com/"}
+            demo={"https://www.flbarber.com/"}
             bgColor={"black"}
             txtColor={"whitesmoke"}
             imgPosition={"center"}
