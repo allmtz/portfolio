@@ -3,7 +3,7 @@ import NEarrow from "./NEarrow";
 import { timing } from "../App";
 import { logEvent } from "firebase/analytics";
 import { useContext } from "react";
-import { AnalyticsContext } from "..";
+import { AnalyticsContext } from "./AnalyticsProvider";
 
 function Project({
   title,
@@ -44,6 +44,7 @@ function Project({
                 target="_blank"
                 rel="noreferrer"
                 style={{ border: `2px solid ${arrowColor}` }}
+                data-testid="demo-link"
                 onClick={() =>
                   logEvent(analytics, `clicked-project-link-${title}`)
                 }

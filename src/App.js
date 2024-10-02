@@ -26,7 +26,7 @@ import hk from "./project-images/hk.png";
 import fineLines from "./project-images/finelines.png";
 // analytics
 import { logEvent } from "firebase/analytics";
-import { AnalyticsContext } from ".";
+import { AnalyticsContext } from "./componenets/AnalyticsProvider";
 
 const totalAnimationDuration = 5;
 

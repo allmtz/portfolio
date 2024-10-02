@@ -1,6 +1,6 @@
 import { logEvent } from "firebase/analytics";
 import { useContext } from "react";
-import { AnalyticsContext } from "..";
+import { AnalyticsContext } from "./AnalyticsProvider";
 
 export const SocialLink = ({ children, link, alt }) => {
   const analytics = useContext(AnalyticsContext);
